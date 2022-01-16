@@ -6,7 +6,7 @@ Repositorio de la página web ...
 
 # Guía para el diseño de la página
 
-- [Wireframe del proyecto](https://www.npmjs.com/package/react-floating-whatsapp) 
+- [Wireframe del proyecto](fceunimet/Documentacion) 
 
 # Entorno de desarrollo
 - React.js
