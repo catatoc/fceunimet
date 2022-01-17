@@ -31,7 +31,7 @@
   --neutral-color-600: #454c53;
   --neutral-color-700: #26282b;
   /* System backgrounds */
-  --system-background-light-100: #fff;
+  --system-background-light-100: white;
   --system-background-light-200: #f7f8f9;
   --system-background-light-300: #e8ebed;
   --system-background-dark-100: #454c53;

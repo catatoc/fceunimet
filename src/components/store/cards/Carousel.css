@@ -1,4 +1,41 @@
 .carousel-holder {
   background-color: var(--system-background-light-200);
-  padding: 6rem;
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*align-items: center;*/
+  height: 75vh;
+}
+
+.products-holder {
+  width: 80%;
+  display: flex;
+  /* flex-wrap: wrap; temporal */
+  flex-direction: row;
+  overflow-x: hidden; /* temporal */
+  justify-content: center;
+}
+
+.carousel-button {
+    margin: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+    border: 0;
+    background-color: transparent;
+    border-radius: 100%;
+    box-shadow:  2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+    align-self: center;
+}
+
+.carousel-button-arrow {
+    color: var(--primary-color-300);
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.carousel-button-arrow:hover {
+    color: var(--primary-color-400);
+    cursor: pointer;
 }
