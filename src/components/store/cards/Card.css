@@ -1,0 +1,20 @@
+.card {
+  border-radius: 25%;
+  background: '#fff';
+  padding: 1rem;
+}
+.card-image {
+  border-radius: 25%;
+}
+.card-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card-text.card-name {
+  font-weight: 700;
+}
+.card-text.card-price {
+    font-weight: 400;
+    font-size: small;
+}

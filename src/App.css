@@ -2,7 +2,41 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
+}
+:root {
+  /* Color Variables segun la paleta de colores del wireframe
+  Primary */
+  --primary-color-100: #fcdcc6;
+  --primary-color-200: #f9ba8d;
+  --primary-color-300: #f59755;
+  --primary-color-400: #f37d2a;
+  --primary-color-500: #ea680d;
+  --primary-color-600: #a24809;
+  --primary-color-700: #482004;
+  /* Secondary */
+  --secondary-color-100: #c4ceec;
+  --secondary-color-200: #7b92d3;
+  --secondary-color-300: #4f6dc5;
+  --secondary-color-400: #3652a3;
+  --secondary-color-500: #2f478d;
+  --secondary-color-600: #203162;
+  --secondary-color-700: #0b1021;
+  /* Neutral */
+  --neutral-color-100: #f7f8f9;
+  --neutral-color-200: #e8ebed;
+  --neutral-color-300: #c9cdd2;
+  --neutral-color-400: #9ea4aa;
+  --neutral-color-500: #72787f;
+  --neutral-color-600: #454c53;
+  --neutral-color-700: #26282b;
+  /* System backgrounds */
+  --system-background-light-100: #fff;
+  --system-background-light-200: #f7f8f9;
+  --system-background-light-300: #e8ebed;
+  --system-background-dark-100: #454c53;
+  --system-background-dark-200: #2f3136;
+  --system-background-dark-300: #26282b;
 }
 
 .home,
@@ -17,7 +51,7 @@
 }
 
 .services {
-  background-image: url('/images/img-2.jpg');
+  background-image: 'url(/images/img-2.jpg)';
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +60,7 @@
 }
 
 .products {
-  background-image: url('/images/img-1.jpg');
+  background-image: 'url(/images/img-1.jpg)';
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -35,7 +69,7 @@
 }
 
 .sign-up {
-  background-image: url('/images/img-8.jpg');
+  background-image: 'url(/images/img-8.jpg)';
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
