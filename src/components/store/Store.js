@@ -11,14 +11,8 @@ export default function Store({ products = [] }) {
       <div className="">
         <Fade cascade triggerOnce>
             <Header image="/images/saman.jpg" title="TIENDA" text="" />
-        </Fade>
-        <Fade cascade triggerOnce>
             <Text />
-        </Fade>
-        <Fade cascade triggerOnce>
             <Carousel products={products} />
-        </Fade>
-        <Fade cascade triggerOnce>
             <CTA />
         </Fade>
       </div>
