@@ -14,6 +14,7 @@
   height: 90%;
   background-color: var(--system-background-light-200);
   margin-bottom: 1rem;
+  object-fit: cover;
 }
 .card-text {
   display: flex;

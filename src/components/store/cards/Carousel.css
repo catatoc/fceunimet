@@ -14,7 +14,6 @@
   /* flex-wrap: wrap; temporal */
   flex-direction: row;
   overflow-x: hidden; /* temporal */
-  justify-content: center;
 }
 
 .carousel-button {
