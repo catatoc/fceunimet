@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
 import './Carousel.css';
 import Card from './Card';
@@ -22,17 +23,29 @@ export default function Carousel({ products = [] }) {
   };
   return (
     <div className="carousel-holder">
-        <button className="carousel-button" type="button" onClick={(e) => prevProduct()}>
+        <motion.button 
+          className="carousel-button" 
+          type="button" 
+          onClick={(e) => prevProduct()}
+          whileHover={{ scale: 1.025 }}
+          whileTap={{ scale: 0.975 }}
+        >
             <FaChevronCircleLeft className="carousel-button-arrow" />
-        </button>
+        </motion.button>
         <div className="products-holder">
             {products?.map((p, i) => (
-            <Card key={i} product={p} />
+                <Card key={i} product={p} />
             ))}
         </div>
-        <button className="carousel-button" type="button" onClick={(e) => nextProduct()}>
+        <motion.button 
+          className="carousel-button" 
+          type="button" 
+          onClick={(e) => nextProduct()}
+          whileHover={{ scale: 1.025 }}
+          whileTap={{ scale: 0.975 }}
+        >
             <FaChevronCircleRight className="carousel-button-arrow" />
-        </button>
+        </motion.button>
     </div>
   )
 }
