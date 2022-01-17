@@ -13,12 +13,14 @@
     font-size: 36px;
 }
 .store-cta-button {
+    text-decoration: none;
     background-color: var(--secondary-color-400);
     border: none;
-    padding: 0.5rem 1.5rem;
+    padding: 0.75rem 2.75rem;
     color: var(--system-background-light-100);
     border-radius: 5px;
     width: fit-content;
+    font-size: medium;
 }
 .store-cta-button:hover {
     background-color: var(--secondary-color-500);

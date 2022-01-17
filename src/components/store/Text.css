@@ -1,0 +1,6 @@
+.store-text-container {
+  height: 50vh;
+  padding: 4rem;
+  text-align: center;
+  background-color: var(--system-background-light-100);
+}
