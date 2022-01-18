@@ -17,11 +17,12 @@
 }
 
 .btn--outline {
-  background-color: transparent;
+  background-color: var(--secondary-color-400);
   color: #fff;
   padding: 8px 20px;
-  border: 1px solid var(--primary);
+  border-radius: 6px;
   transition: all 0.3s ease-out;
+  font-size: 1px;
 }
 
 .btn--medium {
@@ -38,6 +39,6 @@
 .btn--medium:hover {
   transition: all 0.3s ease-out;
   background: #fff;
-  color: #242424;
+  color: var(--secondary-color-400);
   transition: 250ms;
 }
