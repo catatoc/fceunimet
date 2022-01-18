@@ -32,41 +32,29 @@ function Navbar() {
             <img src="/images/logo.png" alt="FCE Unimet Logo" />
           </Link>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
+            {/* Los to se mantendran a "/" hasta que tengan su pagina correspondiente hecha */}
             <li className="nav-item">
               <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
+                Nosotros
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/services"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Services
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Escuelas
               </Link>
             </li>
             <li className="nav-item">
-              <Link
-                to="/products"
-                className="nav-links"
-                onClick={closeMobileMenu}
-              >
-                Products
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Agrupaciones
               </Link>
             </li>
-
-            <li>
-              <Link
-                to="/sign-up"
-                className="nav-links-mobile"
-                onClick={closeMobileMenu}
-              >
-                Sign Up
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Universidad
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">SIGN UP</Button>}
+          {button && <Button buttonStyle="btn--outline">Contacto</Button>}
         </div>
       </nav>
     </>

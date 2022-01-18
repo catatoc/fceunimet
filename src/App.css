@@ -5,7 +5,7 @@
   font-family: "PT Sans", sans-serif;
 }
 :root {
-  /* Color Variables segun la paleta de colores del wireframe
+  /* Variables de Color  segun la paleta de colores del wireframe
   Primary */
   --primary-color-100: #fcdcc6;
   --primary-color-200: #f9ba8d;
@@ -30,6 +30,19 @@
   --neutral-color-500: #72787f;
   --neutral-color-600: #454c53;
   --neutral-color-700: #26282b;
+  /* Texto */
+  --texto-light: #fff;
+  --texto-dark: #000;
+  /* Fondos */
+  --fondo-light-100: #fff;
+  --fondo-light-200: #f7f8f9;
+  --fondo-light-300: #e8ebed;
+  --fondo-dark-100: #454c53;
+  --fondo-dark-200: #2f3136;
+  --fondo-dark-300: #26282b;
+}
+html {
+  font-size: 16px;
 }
 
 .home,
