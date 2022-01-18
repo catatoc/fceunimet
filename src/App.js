@@ -6,11 +6,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
+import HeroVideo from './components/HeroVideo';
 
 function App() {
   return (
     <>
       <Router>
+        {/* <HeroVideo /> */}
         <Navbar />
         <Switch>
           <Route path='/' exact component={Home} />
