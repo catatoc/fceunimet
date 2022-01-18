@@ -1,5 +1,5 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  background: var(--neutral-color-100);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -16,6 +16,7 @@
   align-items: center;
   height: 80px;
   max-width: 1500px;
+  overflow: hidden;
 }
 
 .navbar-logo {
@@ -29,9 +30,11 @@
   align-items: center;
 }
 
-.fa-typo3 {
-  margin-left: 0.5rem;
-  font-size: 1.8rem;
+.navbar-logo img {
+  height: auto;
+  width: auto;
+  max-height: 72px;
+  max-width: 250px;
 }
 
 .nav-menu {
@@ -50,7 +53,7 @@
 }
 
 .nav-links {
-  color: #fff;
+  color: var(--secondary-color-200);
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -92,7 +95,7 @@
     transition: all 0.5s ease;
   }
 
-  .nav-menu.active {
+  .nav-menu .active {
     background: #242222;
     left: 0;
     opacity: 1;
