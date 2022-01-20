@@ -11,7 +11,7 @@
 }
 
 .navbar-container {
-  height: 80px;
+  margin: auto 0px auto 0px;
   max-width: 1500px;
   overflow: hidden;
 }
@@ -30,28 +30,28 @@
   max-width: 126px;
 }
 
+/* A partir de 1120 pixeles para abajo no alcanza el espacio para que los elementos se vean completos */
 .nav-menu {
   display: flex;
   justify-content: right;
+  align-items: center;
   list-style: none;
   text-align: center;
-  width: 60vw;
-  margin-right: 2rem;
+  width: 82vw;
+  margin-right: 50px;
 }
 
 .nav-item {
-  height: 80px;
+  height: 1rem;
 }
 
 .nav-links {
   color: var(--secondary-color-400);
-  display: flex;
-  align-items: center;
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
   font-style: normal;
-  padding: 0.5rem;
+  margin-right: 1.3rem;
   height: 100%;
 }
 
