@@ -53,8 +53,30 @@ function Navbar() {
                 Universidad
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Calendario
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Tienda
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Proyectos
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                Ayuda
+              </Link>
+            </li>
+            <li className="nav-button">
+              {button && <Button buttonStyle="btn--outline">Contacto</Button>}
+            </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">Contacto</Button>}
         </div>
       </nav>
     </>
