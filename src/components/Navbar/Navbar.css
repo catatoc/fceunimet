@@ -2,7 +2,7 @@
   background: var(--fondo-light-100);
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   font-size: 1rem;
   position: sticky;
@@ -11,10 +11,7 @@
 }
 
 .navbar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
+  margin: auto 0px auto 0px;
   max-width: 1500px;
   overflow: hidden;
 }
@@ -33,28 +30,28 @@
   max-width: 126px;
 }
 
+/* A partir de 1120 pixeles para abajo no alcanza el espacio para que los elementos se vean completos */
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
   list-style: none;
   text-align: center;
-  width: 60vw;
-  justify-content: end;
-  margin-right: 2rem;
+  width: 82vw;
+  margin-right: 50px;
 }
 
 .nav-item {
-  height: 80px;
+  height: 1rem;
 }
 
 .nav-links {
   color: var(--secondary-color-400);
-  display: flex;
-  align-items: center;
   text-decoration: none;
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-style: normal;
+  margin-right: 1.3rem;
   height: 100%;
 }
 
