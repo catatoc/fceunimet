@@ -2,7 +2,7 @@
   background: var(--fondo-light-100);
   height: 60px;
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
   font-size: 1rem;
   position: sticky;
@@ -11,9 +11,6 @@
 }
 
 .navbar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 80px;
   max-width: 1500px;
   overflow: hidden;
@@ -34,13 +31,11 @@
 }
 
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
+  display: flex;
+  justify-content: right;
   list-style: none;
   text-align: center;
   width: 60vw;
-  justify-content: end;
   margin-right: 2rem;
 }
 
@@ -54,7 +49,9 @@
   align-items: center;
   text-decoration: none;
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0.5rem;
   height: 100%;
 }
 
