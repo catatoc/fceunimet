@@ -11,7 +11,7 @@ function Navbar() {
   const closeMobileMenu = () => setClick(false);
 
   const showButton = () => {
-    if (window.innerWidth <= 960) {
+    if (window.innerWidth <= 768) {
       setButton(false);
     } else {
       setButton(true);
@@ -28,48 +28,48 @@ function Navbar() {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/" className="navbar-logo">
             <img src="/images/logo.png" alt="FCE Unimet Logo" />
           </Link>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <ul className="nav-menu">
             {/* Los to se mantendran a "/" hasta que tengan su pagina correspondiente hecha */}
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/" className="nav-links">
                 Nosotros
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/" className="nav-links">
                 Escuelas
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/" className="nav-links">
                 Agrupaciones
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/" className="nav-links">
                 Universidad
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <li className="nav-item view-1024">
+              <Link to="/" className="nav-links">
                 Calendario
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <li className="nav-item view-1024">
+              <Link to="/" className="nav-links">
                 Tienda
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <li className="nav-item view-1140">
+              <Link to="/" className="nav-links">
                 Proyectos
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+            <li className="nav-item view-1140">
+              <Link to="/" className="nav-links">
                 Ayuda
               </Link>
             </li>
