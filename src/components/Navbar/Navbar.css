@@ -1,19 +1,23 @@
+.navbar * {
+  color: var(--secondary-color-400);
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .navbar {
   background: var(--fondo-light-100);
-  height: 60px;
   display: flex;
   justify-content: right;
   align-items: center;
-  font-size: 1rem;
-  position: sticky;
+  position: absolute;
+  width: 100%;
   top: 0;
   z-index: 999;
 }
 
 .navbar-container {
-  margin: auto 0px auto 0px;
   max-width: 1500px;
-  overflow: hidden;
 }
 
 .navbar-logo {
@@ -26,7 +30,7 @@
 .navbar-logo img {
   height: auto;
   width: auto;
-  max-height: 51px;
+  max-height: 60px;
   max-width: 126px;
 }
 
@@ -42,109 +46,42 @@
 }
 
 .nav-item {
-  height: 1rem;
+  padding: 22px 12.5px;
+}
+
+/* el padding del dropdown lo lleva le boton */
+.nav-dropdown {
+  display: none;
+  padding: 0px;
+}
+
+.nav-dropdown:hover .dropdown-content {
+  display: flex;
+  flex-flow: column;
 }
 
 .nav-links {
-  color: var(--secondary-color-400);
   text-decoration: none;
-  font-size: 1rem;
-  font-weight: 500;
-  font-style: normal;
-  margin-right: 1.3rem;
   height: 100%;
 }
 
-.fa-bars {
-  color: #fff;
+.nav-links:hover {
+  border-bottom: 3px solid var(--primary-color-400);
 }
-
-.nav-links-mobile {
-  display: none;
-}
-
-.menu-icon {
-  display: none;
-}
-
-@media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
+@media screen and (max-width: 1140px) {
+  /* Proyectos, Ayuda */
+  .nav-item:nth-child(7),
+  .nav-item:nth-child(8) {
+    display: none;
   }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 90vh;
-    position: absolute;
-    top: 80px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-  }
-
-  .nav-menu .active {
-    background: #242222;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-
-  .nav-links {
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    display: table;
-  }
-
-  .nav-links:hover {
-    background-color: #fff;
-    color: #242424;
-    border-radius: 0;
-  }
-
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(25%, 50%);
-  }
-
-  .menu-icon {
+  /* MasDropdown 1024 */
+  .nav-item:nth-child(9) {
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
   }
+}
 
-  .fa-times {
-    color: #fff;
-    font-size: 2rem;
-  }
-
-  .nav-links-mobile {
-    display: block;
-    text-align: center;
-    margin: 2rem auto;
-    border-radius: 4px;
-    width: 80%;
-    text-decoration: none;
-    font-size: 1.5rem;
-    background-color: transparent;
-    color: #fff;
-    padding: 14px 20px;
-    border: 1px solid #fff;
-    transition: all 0.3s ease-out;
-  }
-
-  .nav-links-mobile:hover {
-    background: #fff;
-    color: #242424;
-    transition: 250ms;
+@media screen and (max-width: 1024px) {
+  .nav-view-1024 {
+    display: none;
   }
 }
