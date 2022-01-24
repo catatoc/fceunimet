@@ -43,10 +43,10 @@
 }
 
   /* Media queries. Decidir sitrabajar con max-width o min-width. En este caso está con max-width. Para TV sería mayor a 1200px.*/
-  mobile: 480px;
-  tablet: 768px;
-  laptop: 1024px;
-  desktop: 1200px;
+  --screen-size-mobile: 480px;
+  --screen-size-tablet: 768px;
+  --screen-size-laptop: 1024px;
+  --screen-size-desktop: 1200px;
 
 
 html {
