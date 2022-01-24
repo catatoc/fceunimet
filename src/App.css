@@ -41,6 +41,17 @@
   --fondo-dark-200: #2f3136;
   --fondo-dark-300: #26282b;
 }
+
+  /* Media queries. Decidir sitrabajar con max-width o min width. En este caso está con max-width. Para TV sería mayor a 1200px.*/
+  
+  mobile: 480px;
+  tablet: 768px;
+  laptop: 1024px;
+  desktop: 1200px;
+
+
+
+
 html {
   font-size: 16px;
 }
