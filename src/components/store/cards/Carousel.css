@@ -8,9 +8,20 @@
   height: 75vh;
 }
 
+.slick-track {
+  margin: auto;
+}
+
 .slick-prev:before,
 .slick-next:before {
   color: var(--primary-color-300);
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .carousel-holder {
+    padding: 4rem;
+  }
 }
 
 
