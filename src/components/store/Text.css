@@ -2,5 +2,11 @@
   height: 50vh;
   padding: 4rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: var(--system-background-light-100);
+}
+.store-text-container > h2 {
+    font-size: 36px;
 }
