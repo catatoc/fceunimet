@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./NavDropdown.css";
+import { routes } from "../../lib/routes";
 
 // Los estilos de clases nav-links estan definidos en Navbar.css:
 export const MasDropdown = () => {
@@ -18,7 +19,7 @@ export const MasDropdown = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" className="nav-links">
+          <Link to="/store" className="nav-links">
             Tienda
           </Link>
         </li>
@@ -46,46 +47,13 @@ export const MenuDropdown = () => {
         </p>
       </button>
       <ul className="dropdown-content">
-        <li>
-          <Link to="/" className="nav-links">
-            Nosotros
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="nav-links">
-            Escuelas
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="nav-links">
-            Agrupaciones
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="nav-links">
-            Universidad
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="nav-links">
-            Calendario
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="nav-links">
-            Tienda
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="nav-links">
-            Proyectos
-          </Link>
-        </li>
-        <li>
-          <Link to="/" className="nav-links">
-            Ayuda
-          </Link>
-        </li>
+        {routes.map((route, i) => (
+          <li key={i}>
+            <Link to={route.route} className="nav-links">
+              {route.name}
+            </Link>
+          </li>
+        ))}
       </ul>
     </>
   );

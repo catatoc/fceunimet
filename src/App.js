@@ -8,6 +8,7 @@ import Products from "./components/pages/Products";
 import SignUp from "./components/pages/SignUp";
 import VideoFCE from './components/VideoFCE';
 import { useTimer } from 'react-timer-hook';
+import StorePage from './components/pages/Store';
 
 function App() {
 
@@ -25,10 +26,11 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/services" component={Services} />
-          <Route path="/products" component={Products} />
-          <Route path="/sign-up" component={SignUp} />
+          <Route path='/' exact component={Home} />
+          <Route path='/services' component={Services} />
+          <Route path='/products' component={Products} />
+          <Route path='/sign-up' component={SignUp} />
+          <Route path='/store' component={StorePage} />
         </Switch>
       </Router>
       }
