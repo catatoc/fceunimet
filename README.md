@@ -30,6 +30,7 @@ Repositorio de la página web para la FCE UNIMET. El objetivo de este proyecto, 
 - Prettier
 - ES Lint
 - [React Floating WhatsApp](https://www.npmjs.com/package/react-floating-whatsapp)
-- [React Timer Hook](https://www.npmjs.com/package/react-timer-hook)  
+- [React Timer Hook](https://www.npmjs.com/package/react-timer-hook)
+- [Framer Motion](https://www.npmjs.com/package/framer-motion)
 
 # Referencias
