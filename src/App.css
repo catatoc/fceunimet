@@ -2,10 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 :root {
-  /* Color Variables segun la paleta de colores del wireframe
+  /* Variables de Color  segun la paleta de colores del wireframe
   Primary */
   --primary-color-100: #fcdcc6;
   --primary-color-200: #f9ba8d;
@@ -37,6 +37,20 @@
   --system-background-dark-100: #454c53;
   --system-background-dark-200: #2f3136;
   --system-background-dark-300: #26282b;
+  /* Texto */
+  --texto-light: #fff;
+  --texto-dark: #000;
+  /* Media queries. Decidir si trabajar con max-width o min-width. En este caso está con max-width. Para TV sería mayor a 1200px.*/
+  --screen-size-mobile: 480px;
+  --screen-size-tablet: 768px;
+  --screen-size-laptop: 1024px;
+  --screen-size-desktop: 1200px;
+}
+
+
+
+html {
+  font-size: 16px;
 }
 
 .home,
