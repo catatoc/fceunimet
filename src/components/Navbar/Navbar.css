@@ -50,11 +50,13 @@
 }
 
 /* el padding del dropdown lo lleva le boton */
-.nav-dropdown {
+.mas-dropdown,
+.menu-dropdown {
   display: none;
   padding: 0px;
 }
 
+/* dropdown-content definido en el componente NavDropdown */
 .nav-dropdown:hover .dropdown-content {
   display: flex;
   flex-flow: column;
@@ -68,20 +70,46 @@
 .nav-links:hover {
   border-bottom: 3px solid var(--primary-color-400);
 }
+
 @media screen and (max-width: 1140px) {
-  /* Proyectos, Ayuda */
+  /* No se vera Proyectos, Ayuda en el navbar*/
   .nav-item:nth-child(7),
   .nav-item:nth-child(8) {
     display: none;
   }
-  /* MasDropdown 1024 */
-  .nav-item:nth-child(9) {
+  /* Aparece el boton MasDropdown*/
+  .mas-dropdown {
     display: block;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .nav-view-1024 {
+  /* No se vera Tienda en el navbar*/
+  .nav-item:nth-child(6) {
     display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* No se vera Calendario en el navbar */
+  .nav-item:nth-child(5) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*Quitamos los demas nav items del navbar*/
+  .nav-item:nth-child(4),
+  .nav-item:nth-child(3),
+  .nav-item:nth-child(2),
+  .nav-item:nth-child(1) {
+    display: none;
+  }
+  /*Incorporamos el menu movil y quitamos el más*/
+  .mas-dropdown {
+    display: none;
+  }
+  .menu-dropdown {
+    display: block;
   }
 }
