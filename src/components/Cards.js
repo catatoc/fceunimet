@@ -19,7 +19,7 @@ function Cards() {
               src='images/unimet.jpg'
               text='Encuentra los productos que hemos desarrollado'
               label='Tienda'
-              path='/services'
+              path='/store'
             />
           </ul>
           <ul className='cards__items'>

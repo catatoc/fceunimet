@@ -15,7 +15,7 @@ function App() {
   const [isToggled, setIsToggled] = useState(true); // Para mostrar el video inicial
 
   const time = new Date(); // Para asignar el timer
-  time.setSeconds(time.getSeconds() + 12); // Timer 20 segundos
+  time.setSeconds(time.getSeconds() + 10); // Timer 20 segundos
   
   const {
   } = useTimer({ expiryTimestamp: time, autoStart: true, onExpire: () => setIsToggled(!isToggled)}); //Para que al pasar el tiempo indicado se muestre la página
