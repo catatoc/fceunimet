@@ -13,7 +13,7 @@ function Navbar() {
             <img src="/images/logo.png" alt="FCE Unimet Logo" />
           </Link>
           <ul className="nav-menu">
-            {/* Los to se mantendran a "/" hasta que tengan su pagina correspondiente hecha */}
+            {/* Los "to" (links a otras paginas) se mantendran a "/" hasta que tengan su pagina correspondiente hecha */}
             <li className="nav-item">
               <Link to="/" className="nav-links">
                 Nosotros
