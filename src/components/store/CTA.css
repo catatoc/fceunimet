@@ -1,0 +1,29 @@
+.store-cta-container {
+    background-color: var(--system-background-light-100);
+    height: 50vh;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.store-cta-container > h2 {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    font-size: 36px;
+    font-weight: 400;
+}
+.store-cta-button {
+    text-decoration: none;
+    background-color: var(--secondary-color-400);
+    border: none;
+    padding: 0.75rem 2.75rem;
+    color: var(--system-background-light-100);
+    border-radius: 5px;
+    width: fit-content;
+    font-size: medium;
+}
+.store-cta-button:hover {
+    background-color: var(--secondary-color-500);
+    cursor: pointer;
+}

@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { routes } from '../../lib/routes';
 import { Button } from "../Button";
 import { MenuDropdown, MasDropdown } from "./NavDropdown";
 
@@ -14,46 +15,13 @@ function Navbar() {
           </Link>
           <ul className="nav-menu">
             {/* Los to se mantendran a "/" hasta que tengan su pagina correspondiente hecha */}
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Nosotros
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Escuelas
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Agrupaciones
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Universidad
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Calendario
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Tienda
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Proyectos
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Ayuda
-              </Link>
-            </li>
+            {routes.map((route, i) => (
+              <li className="nav-item" key={i}>
+                <Link to={route.route} className="nav-links">
+                  {route.name}
+                </Link>
+              </li>
+            ))}
             {/* responsive dropdown que va incorporando nav items a medida que se achica la pantalla */}
             <li className="nav-item nav-dropdown mas-dropdown">
               <MasDropdown />
