@@ -22,7 +22,6 @@ export default function Header({ image = '', title = '', text = '' }) {
         <div className="gradient" />
         <div className="header-text">
             <h1>TIENDA</h1>
-            <p>texto sobre merch</p>
         </div>
     </div>
   )
