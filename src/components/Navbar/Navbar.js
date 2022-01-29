@@ -5,26 +5,6 @@ import { Button } from "../Button";
 import { MenuDropdown, MasDropdown } from "./NavDropdown";
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
-
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if (window.innerWidth <= 768) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener("resize", showButton);
-
   return (
     <>
       <nav className="navbar">
@@ -82,9 +62,6 @@ function Navbar() {
             <li className="nav-item nav-dropdown menu-dropdown">
               <MenuDropdown />
             </li>
-            {/* <li>
-              {button && <Button buttonStyle="btn--outline">Contacto</Button>}
-            </li> */}
           </ul>
         </div>
       </nav>
