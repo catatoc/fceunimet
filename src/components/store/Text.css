@@ -8,5 +8,6 @@
   background-color: var(--system-background-light-100);
 }
 .store-text-container > h2 {
-    font-size: 36px;
+    font-size: 56px;
+    font-weight: 400;
 }
