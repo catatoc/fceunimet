@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { Button } from "../Button";
-import { MasDropdown1024 } from "./NavDropdown";
+import { MenuDropdown, MasDropdown } from "./NavDropdown";
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -54,12 +54,12 @@ function Navbar() {
                 Universidad
               </Link>
             </li>
-            <li className="nav-item nav-view-1024">
+            <li className="nav-item">
               <Link to="/" className="nav-links">
                 Calendario
               </Link>
             </li>
-            <li className="nav-item nav-view-1024">
+            <li className="nav-item">
               <Link to="/" className="nav-links">
                 Tienda
               </Link>
@@ -74,8 +74,13 @@ function Navbar() {
                 Ayuda
               </Link>
             </li>
-            <li className="nav-item nav-dropdown">
-              <MasDropdown1024 />
+            {/* responsive dropdown que va incorporando nav items a medida que se achica la pantalla */}
+            <li className="nav-item nav-dropdown mas-dropdown">
+              <MasDropdown />
+            </li>
+            {/* dropdown para pantallas moviles */}
+            <li className="nav-item nav-dropdown menu-dropdown">
+              <MenuDropdown />
             </li>
             {/* <li>
               {button && <Button buttonStyle="btn--outline">Contacto</Button>}
