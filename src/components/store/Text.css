@@ -11,3 +11,9 @@
     font-size: 56px;
     font-weight: 400;
 }
+
+@media screen and (max-width: 960px) {
+  .store-text-container > h2 {
+      font-size: 36px;
+  }
+}
