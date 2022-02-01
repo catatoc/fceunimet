@@ -1,0 +1,55 @@
+footer * {
+  color: var(--texto-dark);
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+footer {
+  background: var(--system-background-light-100);
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.footer-links-container {
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-items:nth-child(1),
+.footer-items:nth-child(2),
+.footer-items:nth-child(3) {
+  order: 1;
+}
+
+.footer-items:nth-child(4),
+.footer-items:nth-child(5),
+.footer-items:nth-child(6) {
+  order: 3;
+}
+
+/* Alineamos el Wrapper del logo para que quede en el medio de los demas items*/
+.footer-items:nth-child(7) {
+  order: 2;
+}
+
+.footer-logo {
+  cursor: pointer;
+}
+
+.footer-logo img {
+  height: auto;
+  width: auto;
+  max-height: 60px;
+  max-width: 126px;
+}
+
+.footer-links {
+  text-decoration: none;
+  height: 100%;
+}
