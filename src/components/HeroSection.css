@@ -5,6 +5,14 @@ video {
   position: fixed;
   z-index: -1;
 }
+.phone-bg {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  display: none;
+}
 
 .hero-container {
   /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
@@ -28,8 +36,8 @@ video {
   margin-top: 8px;
   color: #fff;
   font-size: 32px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 .hero-btns {
@@ -48,6 +56,12 @@ video {
   .hero-container > h1 {
     font-size: 70px;
     margin-top: -150px;
+  }
+  video {
+    display: none;
+  }
+  .phone-bg {
+    display: block;
   }
 }
 
