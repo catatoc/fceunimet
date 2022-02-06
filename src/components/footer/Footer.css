@@ -53,3 +53,21 @@ footer {
   text-decoration: none;
   height: 100%;
 }
+
+.footer-social-container {
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-social {
+  height: 30px;
+}
+
+.footer-copyright {
+  text-align: center;
+  line-height: 1.7;
+}
