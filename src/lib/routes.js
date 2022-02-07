@@ -59,10 +59,3 @@ export const footRoutes = [
     route: "/",
   },
 ];
-
-export const socialRoutes = [
-  {
-    name: "Instagram",
-    src: "",
-  },
-];

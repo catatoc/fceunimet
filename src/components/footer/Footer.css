@@ -11,6 +11,7 @@ footer {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  padding: 0 80px 0 80px;
 }
 
 .footer-links-container {
@@ -25,17 +26,22 @@ footer {
 .footer-items:nth-child(2),
 .footer-items:nth-child(3) {
   order: 1;
+  flex-basis: 11.1%;
 }
 
 .footer-items:nth-child(4),
 .footer-items:nth-child(5),
 .footer-items:nth-child(6) {
   order: 3;
+  flex-basis: 11.1%;
+  text-align: right;
 }
 
 /* Alineamos el Wrapper del logo para que quede en el medio de los demas items*/
 .footer-items:nth-child(7) {
   order: 2;
+  flex-basis: 33.3%;
+  text-align: center;
 }
 
 .footer-logo {
@@ -70,4 +76,13 @@ footer {
 .footer-copyright {
   text-align: center;
   line-height: 1.7;
+}
+
+hr {
+  margin: 40px 0 40px 0;
+}
+
+.footer-copyright {
+  margin: 40px 0 20px 0;
+  color: var(--texto-dark);
 }
