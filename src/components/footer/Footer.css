@@ -85,4 +85,5 @@ hr {
 .footer-copyright {
   margin: 40px 0 20px 0;
   color: var(--texto-dark);
+  font-weight: 400;
 }
