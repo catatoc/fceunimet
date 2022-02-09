@@ -1,0 +1,85 @@
+.JDsection {
+    background-color: var(--system-background-light-100);
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.015em;
+    color: var(--texto-dark);
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 7.5rem;
+    padding-bottom: 3.5rem;
+    align-items: center;
+}
+
+.title h2 {
+    text-align: left;
+    padding-left: 8.4rem;
+    padding-right: 10rem;
+}
+
+.title button {
+    text-align: center;
+    color: var(--texto-light);
+    background-color: var(--secondary-color-400);
+    width: 12rem;
+    height: 3.25rem;
+    border-radius: 6px;
+    border: 0;
+}
+
+.title button:hover {
+    background-color: var(--secondary-color-300);
+    cursor: pointer;
+}
+
+.title button:active {
+    background-color: var(--secondary-color-500);
+}
+
+.functions {
+    padding-left: 10.3rem;
+    padding-bottom: 15.1rem;
+    vertical-align: bottom;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+
+.row:last-child {
+    margin-bottom: 8rem;
+}
+
+.row > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 22.5rem;
+}
+
+.JDsection img {
+    width: 18.75rem;
+    height: 12.5rem;
+}
+
+@media screen and (max-width: 960px) {
+    .title h2 {
+        font-size: 56px;
+    }
+    .container > h3 {
+        font-size: 36px;
+    }
+    .CAFunctions {
+        font-size: 24px;
+    }
+    .container > p {
+        font-size: 18px;
+    }
+
+}

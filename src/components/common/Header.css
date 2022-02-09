@@ -40,20 +40,13 @@ grid-row-end: 3;
 }
 
 @media screen and (max-width: 960px) {
-.header-container > h1 {
+.header-text > h1 {
     font-size: 70px;
-    margin-top: -150px;
 }
 }
 
 @media screen and (max-width: 768px) {
-.header-container > h1 {
-    font-size: 50px;
-    margin-top: -100px;
-}
-
-.header-container > p {
-    font-size: 30px;
+.header-text > h1 {
+    font-size: 52px;
 }
 }
-  

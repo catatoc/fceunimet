@@ -5,6 +5,14 @@ video {
   z-index: -1;
   height: 100%;
 }
+.phone-bg {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  display: none;
+}
 
 .hero-container {
   /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
@@ -48,6 +56,12 @@ video {
   .hero-container > h1 {
     font-size: 70px;
     margin-top: -150px;
+  }
+  video {
+    display: none;
+  }
+  .phone-bg {
+    display: block;
   }
 }
 
