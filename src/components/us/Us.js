@@ -1,7 +1,7 @@
 import React from 'react';
 import { Fade } from "react-awesome-reveal";
 import Header from '../common/Header';
-import Text from '../store/Text'; //Esto hay que cambiarlo cuando se mueva de store
+import Text from '../common/Text'; //Esto hay que cambiarlo cuando se mueva de store
 import CA from './CA'
 import JD from './JD'
 import JoinUs from './JoinUs';
