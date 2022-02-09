@@ -6,9 +6,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Services from "./components/pages/Services";
 import Products from "./components/pages/Products";
 import SignUp from "./components/pages/SignUp";
-import VideoFCE from "./components/VideoFCE";
-import { useTimer } from "react-timer-hook";
-import StorePage from "./components/pages/Store";
+import VideoFCE from './components/VideoFCE';
+import { useTimer } from 'react-timer-hook';
+import StorePage from './components/pages/Store';
+import UsPage from './components/pages/Us';
 
 function App() {
   const [firstVideoEnded, setfirstVideoEnded] = useState(false); //variable que permite saber si el video inicial termino
@@ -42,6 +43,7 @@ function App() {
             <Route path="/products" component={Products} />
             <Route path="/sign-up" component={SignUp} />
             <Route path="/store" component={StorePage} />
+            <Route path='/us' component={UsPage} />
           </Switch>
         </Router>
       )}
