@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import Home from "./components/pages/Home";
@@ -12,30 +12,41 @@ import StorePage from './components/pages/Store';
 import UsPage from './components/pages/Us';
 
 function App() {
+  const [firstVideoEnded, setfirstVideoEnded] = useState(false); //variable que permite saber si el video inicial termino
 
-  const [isToggled, setIsToggled] = useState(true); // Para mostrar el video inicial
+  const childToParent = (childdata) => {
+    //comunicacion entre este componente y el VideoFCE.js para saber si video termino
+    setfirstVideoEnded(childdata);
+  };
 
-  const time = new Date(); // Para asignar el timer
-  time.setSeconds(time.getSeconds() + 10); // Timer 20 segundos
-  
-  const {
-  } = useTimer({ expiryTimestamp: time, autoStart: true, onExpire: () => setIsToggled(!isToggled)}); //Para que al pasar el tiempo indicado se muestre la página
+  // const [isToggled, setIsToggled] = useState(true); // Para mostrar el video inicial
+
+  // const time = new Date(); // Para asignar el timer
+  // time.setSeconds(time.getSeconds() + 5); // Timer 20 segundos
+
+  // const {} = useTimer({
+  //   expiryTimestamp: time,
+  //   autoStart: true,
+  //   onExpire: () => setIsToggled(!isToggled),
+  // }); //Para que al pasar el tiempo indicado se muestre la página
 
   return (
     <>
-      {isToggled ? <VideoFCE /> : 
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/services' component={Services} />
-          <Route path='/products' component={Products} />
-          <Route path='/sign-up' component={SignUp} />
-          <Route path='/store' component={StorePage} />
-          <Route path='/us' component={UsPage} />
-        </Switch>
-      </Router>
-      }
+      {!firstVideoEnded ? (
+        <VideoFCE childToParent={childToParent} />
+      ) : (
+        <Router>
+          <Navbar />
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/services" component={Services} />
+            <Route path="/products" component={Products} />
+            <Route path="/sign-up" component={SignUp} />
+            <Route path="/store" component={StorePage} />
+            <Route path='/us' component={UsPage} />
+          </Switch>
+        </Router>
+      )}
     </>
   );
 }
