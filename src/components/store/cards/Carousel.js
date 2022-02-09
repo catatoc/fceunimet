@@ -51,12 +51,20 @@ export default function Carousel({ products = [] }) {
     dots: true,
     infinite: false,
     speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     initialSlide: 0,
     nextArrow: <div className="carousel-button" />,
     prevArrow: <div className="carousel-button" />,
     responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 1
+        }
+      },
       {
         breakpoint: 1130,
         settings: {
