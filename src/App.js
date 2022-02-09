@@ -10,6 +10,7 @@ import VideoFCE from './components/VideoFCE';
 import { useTimer } from 'react-timer-hook';
 import StorePage from './components/pages/Store';
 import UsPage from './components/pages/Us';
+import Footer from "./components/footer/Footer";
 
 function App() {
   const [firstVideoEnded, setfirstVideoEnded] = useState(false); //variable que permite saber si el video inicial termino
@@ -45,6 +46,7 @@ function App() {
             <Route path="/store" component={StorePage} />
             <Route path='/us' component={UsPage} />
           </Switch>
+          <Footer />
         </Router>
       )}
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import { routes } from '../../lib/routes';
+import { routes } from "../../lib/routes";
 import { Button } from "../Button";
 import { MenuDropdown, MasDropdown } from "./NavDropdown";
 
