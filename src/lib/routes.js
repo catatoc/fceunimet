@@ -1,7 +1,7 @@
 export const routes = [
   {
     name: "Nosotros",
-    route: "/",
+    route: "/us",
   },
   {
     name: "Escuelas",
