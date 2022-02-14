@@ -9,6 +9,7 @@ import Schools from "./components/pages/Schools";
 import SignUp from "./components/pages/SignUp";
 import HeroVideo from './components/HeroVideo';
 import SchoolSection from "./components/SchoolSection";
+import SchoolInfo from "./components/SchoolInfo"
 
 function App() {
   return (

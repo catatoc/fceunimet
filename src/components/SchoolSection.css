@@ -1,44 +1,63 @@
 .container{
     width: 100%;
-    max-width: 700px;
     margin: auto;
-    margin-top: 100px;
+    background:none;
 }
 .lbl-menu{
-    background: #234;
+    background: none;
 }
 .lbl-menu label{
     display: inline-block;
-    padding: 20px;
-    color: #fff;
+    width: 15.5%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #000;
+    font-weight: bold;
+    font-size: 13px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: -7.5px;
+    margin-left: 1%;
+    background-color: #ffad4f;
     cursor: pointer;
-    transition: all 400ms ease;
+    transition: all 500ms ease;
 }
+
 .lbl-menu label:hover{
-    background: #28435d;
+    background: #fa760a;
 }
 .content{
     position: relative;
 }
 .content div{
     position: absolute;
+    width: 100%;
     line-height: 1.8;
     transition: all 500ms ease;
     opacity: 0;
     visibility: hidden;
     transform: scale(0.90);
     padding: 30px;
-    background: #fff;
+    background: linear-gradient(-75deg, #fff, #ffad4f);;
     padding-bottom: 40px;
 }
-#radio1,#radio2,#radio3,#radio4,#radio5{
+.logo{
+    width: 30px;
+    height: 15px;
+}
+
+#radio2,#radio1,#radio3,#radio4,#radio5,#radio6{
     display: none;
 }
-#radio1:checked ~ .tab1,
 #radio2:checked ~ .tab2,
+#radio1:checked ~ .tab1,
 #radio3:checked ~ .tab3,
 #radio4:checked ~ .tab4,
-#radio5:checked ~ .tab5
+#radio5:checked ~ .tab5,
+#radio6:checked ~ .tab6
 {
     opacity: 1;
     visibility: visible;
@@ -50,19 +69,37 @@
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid transparent;
-    border-bottom: 10px solid #fff;
+    border-bottom: 10px solid #fa760a;
     bottom: 100%;
-    left: 28px;
+    left: 4px;
 }
 .content .tab2:after{
-    left: 122px;
+    left: 3px; 
+}
+.content .tab1:after{
+    left: 206px; 
 }
 .content .tab3:after{
-    left: 210px;
+    left: 409px;
 }
 .content .tab4:after{
-    left: 303px;
+    left: 611px;
 }
 .content .tab5:after{
-    left: 465px;
+    left: 814px;
+}
+.content .tab6:after{
+    left: 1015px;
+}
+
+.title{
+    margin-left: 7.5%;
+    margin-top: 2.5%;
+}
+.school-logo{
+    width: 270px;
+    height: 140px;
+}
+.school-name{
+    
 }
