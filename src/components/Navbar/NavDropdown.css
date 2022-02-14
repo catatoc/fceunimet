@@ -1,5 +1,5 @@
 .dropbtn {
-  background-color: var(--fondo-light-100);
+  background-color: var(--system-background-light-100);
   border: 0;
   padding: 30px 12.5px;
 }
@@ -16,7 +16,7 @@
   display: none;
   position: absolute;
   text-align: left;
-  background-color: var(--fondo-light-100);
+  background-color: var(--system-background-light-100);
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   min-width: 120px;
   width: 100%;
@@ -25,9 +25,39 @@
 
 .dropdown-content li {
   padding: 12px 12.5px;
+  display: none;
 }
 
 .dropdown-links {
   text-decoration: none;
   height: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+  /* Aparece el Ayuda, Proyectos en el Dropdown*/
+  .dropdown-content li:nth-child(3),
+  .dropdown-content li:nth-child(4) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  /*Aparece Tienda en el dropdown*/
+  .dropdown-content li:nth-child(2) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /*Aparece Calendario en el navbar */
+  .dropdown-content li:nth-child(1) {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*Aparecen todos los nav-links en el dropdown*/
+  .dropdown-content li {
+    display: block;
+  }
 }

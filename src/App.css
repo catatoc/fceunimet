@@ -30,23 +30,23 @@
   --neutral-color-500: #72787f;
   --neutral-color-600: #454c53;
   --neutral-color-700: #26282b;
+  /* System backgrounds */
+  --system-background-light-100: white;
+  --system-background-light-200: #f7f8f9;
+  --system-background-light-300: #e8ebed;
+  --system-background-dark-100: #454c53;
+  --system-background-dark-200: #2f3136;
+  --system-background-dark-300: #26282b;
   /* Texto */
   --texto-light: #fff;
   --texto-dark: #000;
-  /* Fondos */
-  --fondo-light-100: #fff;
-  --fondo-light-200: #f7f8f9;
-  --fondo-light-300: #e8ebed;
-  --fondo-dark-100: #454c53;
-  --fondo-dark-200: #2f3136;
-  --fondo-dark-300: #26282b;
-}
-
-  /* Media queries. Decidir sitrabajar con max-width o min-width. En este caso está con max-width. Para TV sería mayor a 1200px.*/
+  /* Media queries. Decidir si trabajar con max-width o min-width. En este caso está con max-width. Para TV sería mayor a 1200px.*/
   --screen-size-mobile: 480px;
   --screen-size-tablet: 768px;
   --screen-size-laptop: 1024px;
   --screen-size-desktop: 1200px;
+}
+
 
 
 html {
@@ -65,7 +65,7 @@ html {
 }
 
 .services {
-  background-image: url("/images/img-2.jpg");
+  background-image: 'url(/images/img-2.jpg)';
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,7 +74,7 @@ html {
 }
 
 .products {
-  background-image: url("/images/img-1.jpg");
+  background-image: 'url(/images/img-1.jpg)';
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -83,7 +83,7 @@ html {
 }
 
 .sign-up {
-  background-image: url("/images/img-8.jpg");
+  background-image: 'url(/images/img-8.jpg)';
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

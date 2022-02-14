@@ -10,7 +10,7 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/unimet3.jpg'
+              src='images/presidentes.jpg'
               text='Descubre lo que significa ser parte de este equipo'
               label='Nosotros'
               path='/services'
@@ -19,7 +19,7 @@ function Cards() {
               src='images/unimet.jpg'
               text='Encuentra los productos que hemos desarrollado'
               label='Tienda'
-              path='/services'
+              path='/store'
             />
           </ul>
           <ul className='cards__items'>

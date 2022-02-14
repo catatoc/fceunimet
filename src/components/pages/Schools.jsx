@@ -10,7 +10,7 @@ function Schools() {
             <HeroSchools />
             <SchoolInfo />
             <SchoolSection />
-            
+
         </>
     )
 }

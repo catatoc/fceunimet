@@ -1,30 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { routes } from "../../lib/routes";
 import { Button } from "../Button";
-import { MasDropdown1024 } from "./NavDropdown";
+import { MenuDropdown, MasDropdown } from "./NavDropdown";
 
 function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
-
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if (window.innerWidth <= 768) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-
-  useEffect(() => {
-    showButton();
-  }, []);
-
-  window.addEventListener("resize", showButton);
-
   return (
     <>
       <nav className="navbar">
@@ -34,52 +15,21 @@ function Navbar() {
           </Link>
           <ul className="nav-menu">
             {/* Los to se mantendran a "/" hasta que tengan su pagina correspondiente hecha */}
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Nosotros
-              </Link>
+            {routes.map((route, i) => (
+              <li className="nav-item" key={i}>
+                <Link to={route.route} className="nav-links">
+                  {route.name}
+                </Link>
+              </li>
+            ))}
+            {/* responsive dropdown que va incorporando nav items a medida que se achica la pantalla */}
+            <li className="nav-item nav-dropdown mas-dropdown">
+              <MasDropdown />
             </li>
-            <li className="nav-item">
-              <Link to="/Schools" className="nav-links">
-                Escuelas
-              </Link>
+            {/* dropdown para pantallas moviles */}
+            <li className="nav-item nav-dropdown menu-dropdown">
+              <MenuDropdown />
             </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Agrupaciones
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Universidad
-              </Link>
-            </li>
-            <li className="nav-item nav-view-1024">
-              <Link to="/" className="nav-links">
-                Calendario
-              </Link>
-            </li>
-            <li className="nav-item nav-view-1024">
-              <Link to="/" className="nav-links">
-                Tienda
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Proyectos
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/" className="nav-links">
-                Ayuda
-              </Link>
-            </li>
-            <li className="nav-item nav-dropdown">
-              <MasDropdown1024 />
-            </li>
-            {/* <li>
-              {button && <Button buttonStyle="btn--outline">Contacto</Button>}
-            </li> */}
           </ul>
         </div>
       </nav>
