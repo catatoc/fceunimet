@@ -1,0 +1,32 @@
+.card {
+  border-radius: 10px;
+  background: white;
+  padding: 1rem;
+  width: 70rem;
+  height: 20rem;
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+.card-image {
+  border-radius: 10px;
+  height: 90%;
+  background-color: var(--system-background-light-200);
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+.card-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+}
+.card-text .card-name {
+  font-weight: 700;
+}
+.card-text .card-price {
+  font-weight: 400;
+  font-size: small;
+}
