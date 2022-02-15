@@ -7,7 +7,7 @@ import Services from "./components/pages/Services";
 import Products from "./components/pages/Products";
 import Schools from "./components/pages/Schools";
 import SignUp from "./components/pages/SignUp";
-import HeroVideo from './components/HeroVideo';
+
 import SchoolSection from "./components/SchoolSection";
 import SchoolInfo from "./components/SchoolInfo"
 import VideoFCE from './components/VideoFCE';
