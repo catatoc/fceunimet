@@ -23,7 +23,7 @@ function Home() {
         CSSProperties="z-index=100"
       />
       {/* </Fade> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

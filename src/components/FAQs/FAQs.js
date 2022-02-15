@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 import './FAQs.css';
 import Header from '../common/Header';
 import Text from '../common/Text';
-import Questions from './cards/Card';
+import Questions from './cards/question';
 // import CTA from './CTA';
 
 export default function Store({ products = [] }) {

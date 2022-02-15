@@ -1,4 +1,4 @@
-.card {
+.questioncard {
   border-radius: 10px;
   background: white;
   padding: 1rem;
@@ -9,24 +9,24 @@
   flex-direction: column;
   box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
-.card-image {
+.questioncard-image {
   border-radius: 10px;
   height: 90%;
   background-color: var(--system-background-light-200);
   margin-bottom: 1rem;
   object-fit: cover;
 }
-.card-text {
+.questioncard-text {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 10%;
 }
-.card-text .card-name {
+.questioncard-text .questioncard-name {
   font-weight: 700;
 }
-.card-text .card-price {
+.questioncard-text .questioncard-price {
   font-weight: 400;
   font-size: small;
 }
