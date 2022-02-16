@@ -1,12 +1,3 @@
-.container{
-    width: 100%;
-    background-color: white;
-}
-p{
-    padding: 30px;
-    text-align: center;
-}
-
 .ing-container div{
     display: inline-block;
     background-color: white;

@@ -1,19 +1,20 @@
-.container{
+.container_school{
     width: 100%;
     margin: auto;
     background:none;
+    
 }
 .lbl-menu{
-    background: none;
+    display: block;
 }
 .lbl-menu label{
-    display: inline-block;
-    width: 15.5%;
+    display:inline-block;
+    width: 15.55%;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
     color: #000;
     font-weight: bold;
     font-size: 13px;
@@ -35,6 +36,7 @@
 .content div{
     position: absolute;
     width: 100%;
+    
     line-height: 1.8;
     transition: all 500ms ease;
     opacity: 0;
@@ -90,16 +92,4 @@
 }
 .content .tab6:after{
     left: 1015px;
-}
-
-.title{
-    margin-left: 7.5%;
-    margin-top: 2.5%;
-}
-.school-logo{
-    width: 270px;
-    height: 140px;
-}
-.school-name{
-    
 }

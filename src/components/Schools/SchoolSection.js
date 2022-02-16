@@ -1,14 +1,14 @@
 import React from "react";
 import './SchoolSection.css';
 //import logo from '..\src\Images';
-import SchoolInfo from './SchoolInfo';
-import Cards from "./Cards";
-function SchoolSection() {
+import SchoolCard from './SchoolCard';
 
 
+
+export default function SchoolSection() {
     return (
-        <>
-            <div class="container">
+        
+        <div class="container_school">
                 <div class="lbl-menu">
                     <label for="radio2"><img src={"https://www.udg.co.cu/cmap/sistemas_operativos/administracion_memoria/Traduccion%20de%20DV%20a%20DR/images/memoria_virtual2.png"} className="logo" /></label>
                     <label for="radio1">Ingenieria</label>
@@ -22,7 +22,7 @@ function SchoolSection() {
                     <input type="radio" name="radio" id="radio1" checked></input>
                     <div class="tab1">
                         <h2 className="title">Ingenieria</h2>
-                            
+                        <SchoolCard /> 
                     </div>
 
                     <input type="radio" name="radio" id="radio2" checked></input>
@@ -54,12 +54,6 @@ function SchoolSection() {
                     </div>
                 </div>
             </div>
-
-
-        </>
-
     );
 }
-
-export default SchoolSection;
 

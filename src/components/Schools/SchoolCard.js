@@ -1,15 +1,10 @@
 import React from "react";
-import './SchoolInfo.css';
+import './SchoolCard.css';
 
-
-function SchoolInfo() {
-
-
+export default function SchoolCard() {
     return (
         <>
-            <div className="container">
-                <p>aca va info de las carreras</p>
-            </div>
+            
             <div className="ing-container">
                 <div className="ingS">
                     <p>Ing civil</p>
@@ -44,6 +39,4 @@ function SchoolInfo() {
 
     );
 }
-
-export default SchoolInfo;
 

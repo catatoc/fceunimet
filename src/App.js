@@ -5,11 +5,9 @@ import Home from "./components/pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Services from "./components/pages/Services";
 import Products from "./components/pages/Products";
-import Schools from "./components/pages/Schools";
 import SignUp from "./components/pages/SignUp";
 
-import SchoolSection from "./components/SchoolSection";
-import SchoolInfo from "./components/SchoolInfo"
+import SchoolsPage from "./components/pages/Schools"
 import VideoFCE from './components/VideoFCE';
 import { useTimer } from 'react-timer-hook';
 import StorePage from './components/pages/Store';
@@ -45,6 +43,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/services" component={Services} />
+            <Route path="/schools" component={SchoolsPage} />
             <Route path="/products" component={Products} />
             <Route path="/sign-up" component={SignUp} />
             <Route path="/store" component={StorePage} />

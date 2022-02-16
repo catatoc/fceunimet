@@ -5,7 +5,7 @@ export const routes = [
   },
   {
     name: "Escuelas",
-    route: "/",
+    route: "/schools",
   },
   {
     name: "Agrupaciones",
