@@ -47,8 +47,10 @@
     padding-bottom: 40px;
 }
 .logo{
-    width: 30px;
+    width: 45px;
     height: 15px;
+    background-color: white;
+    
 }
 
 #radio2,#radio1,#radio3,#radio4,#radio5,#radio6{
@@ -92,4 +94,9 @@
 }
 .content .tab6:after{
     left: 1015px;
+}
+.title_carreras{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }

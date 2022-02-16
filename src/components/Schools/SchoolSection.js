@@ -2,15 +2,16 @@ import React from "react";
 import './SchoolSection.css';
 //import logo from '..\src\Images';
 import SchoolCard from './SchoolCard';
-
-
+import SchoolCard_Faces from "./SchoolCard_Faces";
+import SchoolCard_JyP from "./SchoolCard_JyP";
+import SchoolCard_humanidades from "./SchoolCard_humanidades";
 
 export default function SchoolSection() {
     return (
         
-        <div class="container_school">
-                <div class="lbl-menu">
-                    <label for="radio2"><img src={"https://www.udg.co.cu/cmap/sistemas_operativos/administracion_memoria/Traduccion%20de%20DV%20a%20DR/images/memoria_virtual2.png"} className="logo" /></label>
+        <div className="container_school">
+                <div className="lbl-menu">
+                    <label for="radio2"><img src="/images/logo.png" alt="FCE Unimet Logo" className="logo" /></label>
                     <label for="radio1">Ingenieria</label>
                     <label for="radio3">Faces</label>
                     <label for="radio4">Ciencias</label>
@@ -18,10 +19,10 @@ export default function SchoolSection() {
                     <label for="radio6">Juridicos y Politicos</label>
                 </div>
 
-                <div class="content">
+                <div className="content">
                     <input type="radio" name="radio" id="radio1" checked></input>
                     <div class="tab1">
-                        <h2 className="title">Ingenieria</h2>
+                        <h2 className="title_carreras">Ingenieria</h2>
                         <SchoolCard /> 
                     </div>
 
@@ -32,25 +33,25 @@ export default function SchoolSection() {
 
                     <input type="radio" name="radio" id="radio3"></input>
                     <div class="tab3">
-                        <h2 className="title">Faces</h2>
-                        <p>ACA VAN COSAS DE FACESssssssssssssssssss sssssssssssssssssssssssssssssssssss</p>
+                        <h2 className="title_carreras">Faces</h2>
+                        <SchoolCard_Faces />
                     </div>
 
                     <input type="radio" name="radio" id="radio4"></input>
                     <div class="tab4">
-                        <h2 className="title">Ciencias</h2>
+                        <h2 className="title_carreras">Ciencias</h2>
                         <p>ACA VAN COSAS DE CIENCIASsssssssssssssssss ssssssssssssssssssssssssssssssssssssss</p>
                     </div>
 
                     <input type="radio" name="radio" id="radio5"></input>
                     <div class="tab5">
-                        <h2 className="title">Humanidades</h2>
-                        <p>ACA VAN COSAS DE HUMANIDADESsssssssssss ssssssssssssssssssssssssssssssssssssss</p>
+                        <h2 className="title_carreras">Humanidades</h2>
+                        <SchoolCard_humanidades />
                     </div>
                     <input type="radio" name="radio" id="radio6"></input>
                     <div class="tab6">
-                        <h2 className="title">Juridicos y Politicos</h2>
-                        <p>ACA VAN COSAS DE JyPpppppppppppppppppppp ppppppppppppppppppppppppppppppppppppppp</p>
+                        <h2 className="title_carreras">Juridicos y Politicos</h2>
+                        <SchoolCard_JyP />
                     </div>
                 </div>
             </div>
