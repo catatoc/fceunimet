@@ -10,13 +10,13 @@ export default function Us() {
     return(
       <div className="">
         <Fade cascade triggerOnce>
-            <Header image="/images/gente.jpg" title="NOSOTROS" text="" />
+            <Header image="" title="NOSOTROS" text="" />
             <Text />
             <CA 
-                img1 = '' 
+                img1 = "/images/nicolle.jpg" 
                 name1 = 'Nicolle Giraud' 
                 info1 = 'Estudiante de Ingeniería Química. Agregar más cosas' 
-                img2 = '' 
+                img2 = "/images/jose.jpg" 
                 name2 = 'José Cisneros' 
                 info2 = 'Estudiante de Ingeniería de Sistemas y Producción. Agregar más cosas' 
             />
