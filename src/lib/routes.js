@@ -29,7 +29,7 @@ export const routes = [
   },
   {
     name: "Ayuda",
-    route: "/",
+    route: "/ayuda",
   },
 ];
 
