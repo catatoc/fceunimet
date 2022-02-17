@@ -47,8 +47,6 @@
   --screen-size-desktop: 1200px;
 }
 
-
-
 html {
   font-size: 16px;
 }
@@ -65,7 +63,7 @@ html {
 }
 
 .services {
-  background-image: 'url(/images/img-2.jpg)';
+  background-image: "url(/images/img-2.jpg)";
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -74,7 +72,7 @@ html {
 }
 
 .products {
-  background-image: 'url(/images/img-1.jpg)';
+  background-image: "url(/images/img-1.jpg)";
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -83,7 +81,7 @@ html {
 }
 
 .sign-up {
-  background-image: 'url(/images/img-8.jpg)';
+  background-image: "url(/images/img-8.jpg)";
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
