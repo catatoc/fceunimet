@@ -7,7 +7,7 @@
   margin: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px 2px rgba(0.1, 0.1, 0.1, 0.2);
 }
 .questioncard-image {
   border-radius: 10px;
@@ -19,14 +19,47 @@
 .questioncard-text {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   height: 10%;
+  margin-left: 0.5rem;
 }
+.questioncard-description {
+    word-wrap: break-word
+}
+
+.questioncard-description {
+    word-wrap: break-word
+}
+
 .questioncard-text .questioncard-name {
-  font-weight: 700;
+  font-weight: 1000;
+  margin-left: 1rem;
+  font-size: larger;
+  object-fit: cover;
 }
 .questioncard-text .questioncard-price {
   font-weight: 400;
   font-size: small;
+}
+
+@media screen and (max-width: 1140px) {
+  .questioncard {
+    width: 50rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .questioncard {
+    width: 40rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .questioncard {
+    width: 30rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .questioncard {
+    width: 20rem;
+  }
 }

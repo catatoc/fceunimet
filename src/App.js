@@ -48,7 +48,7 @@ function App() {
             <Route path='/us' component={UsPage} />
             <Route path='/ayuda' component={FAQs} />
           </Switch>
-          {/* <Footer /> */}
+          <Footer />
         </Router>
       )}
     </>
