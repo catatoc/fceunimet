@@ -24,8 +24,9 @@ footer {
   list-style: none;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid grey;
 }
 
 .footer-items:nth-child(1),
@@ -98,8 +99,8 @@ hr {
   #footer-logo-small-screens-wrapper {
     display: block;
     text-align: center;
-  }
-  .footer-logo img {
+    border-bottom: 1px solid grey;
+    padding-bottom: 40px;
     margin-bottom: 40px;
   }
 
@@ -116,7 +117,8 @@ hr {
     display: none;
   }
 
-  .footer-items {
+  /* No necesitamos que el ultimo elemento visible tenga margen ya que la lista ya lo aplica */
+  .footer-items:not(:nth-child(6)) {
     margin-bottom: 24px;
   }
 }
