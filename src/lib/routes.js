@@ -43,12 +43,12 @@ export const footRoutes = [
     route: "/",
   },
   {
-    name: "Company",
-    route: "/",
+    name: "Unimet",
+    route: { pathname: "https://www.unimet.edu.ve/" },
   },
   {
     name: "Help Desk",
-    route: "/",
+    route: { pathname: "https://cobranzas-unimet.hesk.com/" },
   },
   {
     name: "Blog",
