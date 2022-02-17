@@ -1,18 +1,19 @@
-import React from "react";
-import "../../App.css";
-import Cards from "../Cards";
-import HeroSection from "../HeroSection";
-import HeroVideo from "../HeroVideo";
+import React from 'react';
+import { Fade } from "react-awesome-reveal";
+import '../../App.css';
+import Cards from '../Cards';
+import HeroSection from '../HeroSection';
+import FloatingWhatsApp from 'react-floating-whatsapp';
+import logo from './../../logo_blanco.png';
 import Footer from "../footer/Footer";
-import FloatingWhatsApp from "react-floating-whatsapp";
-import logo from "./../../logo_blanco.png";
 
 function Home() {
   return (
     <>
-      <HeroSection />
-      <Cards />
-      <FloatingWhatsApp
+      {/* <Fade cascade triggerOnce> */}
+        <HeroSection />
+        <Cards />
+        <FloatingWhatsApp
         allowClickAway={true}
         avatar={logo}
         phoneNumber="+584141181358"
@@ -21,7 +22,8 @@ function Home() {
         chatMessage="Hola! Un gusto saludarte. Estamos a la orden para ayudarte🌳🍊"
         CSSProperties="z-index=100"
       />
-      <Footer />
+      {/* </Fade> */}
+      {/* <Footer /> */}
     </>
   );
 }
