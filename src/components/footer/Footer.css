@@ -88,10 +88,6 @@ hr {
   margin-bottom: 40px;
 }
 
-#logo-break {
-  display: none;
-}
-
 .footer-copyright {
   margin: 40px 0 20px 0;
   color: var(--texto-dark);
