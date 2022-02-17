@@ -16,7 +16,6 @@ function Footer() {
         <Link to="/" className="footer-logo">
           <img src="/images/logo.png" alt="FCE Unimet Logo" />
         </Link>
-        <hr />
       </div>
       <ul className="footer-links-container">
         {footRoutes.map((route, i) => (
@@ -32,7 +31,6 @@ function Footer() {
           </Link>
         </li>
       </ul>
-      <hr />
       <ul className="footer-social-container">
         <li>
           <Link to="/" className="footer-social">
