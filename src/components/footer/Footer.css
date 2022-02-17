@@ -24,6 +24,8 @@ footer {
   list-style: none;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-items:nth-child(1),
@@ -83,11 +85,7 @@ footer {
 }
 
 hr {
-  margin: 40px 0 40px 0;
-}
-
-#logo-break {
-  display: none;
+  margin-bottom: 40px;
 }
 
 .footer-copyright {
@@ -96,10 +94,13 @@ hr {
   font-weight: 400;
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1024px) {
   #footer-logo-small-screens-wrapper {
     display: block;
     text-align: center;
+  }
+  .footer-logo img {
+    margin-bottom: 40px;
   }
 
   .footer-links-container {
@@ -107,24 +108,15 @@ hr {
     justify-content: stretch;
     align-items: center;
   }
-
-  /* Alineamos el Wrapper del logo para que quede en el medio de los demas items*/
+  .footer-links-container {
+    margin-bottom: 16px;
+  }
+  /* Escondemos el logo de la lista */
   .footer-items:nth-child(7) {
     display: none;
-    flex-basis: 0%;
   }
 
-  #logo-break {
-    display: block;
-  }
-
-  .footer-items:nth-child(1),
-  .footer-items:nth-child(2),
-  .footer-items:nth-child(3),
-  .footer-items:nth-child(4),
-  .footer-items:nth-child(5),
-  .footer-items:nth-child(6) {
-    flex-basis: 16.66%;
-    padding: 24px 0 0 24px;
+  .footer-items {
+    margin-bottom: 24px;
   }
 }
