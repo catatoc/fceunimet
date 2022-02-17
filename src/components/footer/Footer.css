@@ -1,7 +1,7 @@
 footer * {
   color: var(--texto-dark);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -12,6 +12,10 @@ footer {
   flex-flow: column;
   justify-content: center;
   padding: 0 80px 0 80px;
+}
+
+#footer-logo-small-screens-wrapper {
+  display: none;
 }
 
 .footer-links-container {
@@ -82,8 +86,45 @@ hr {
   margin: 40px 0 40px 0;
 }
 
+#logo-break {
+  display: none;
+}
+
 .footer-copyright {
   margin: 40px 0 20px 0;
   color: var(--texto-dark);
   font-weight: 400;
+}
+
+@media screen and (max-width: 780px) {
+  #footer-logo-small-screens-wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .footer-links-container {
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: center;
+  }
+
+  /* Alineamos el Wrapper del logo para que quede en el medio de los demas items*/
+  .footer-items:nth-child(7) {
+    display: none;
+    flex-basis: 0%;
+  }
+
+  #logo-break {
+    display: block;
+  }
+
+  .footer-items:nth-child(1),
+  .footer-items:nth-child(2),
+  .footer-items:nth-child(3),
+  .footer-items:nth-child(4),
+  .footer-items:nth-child(5),
+  .footer-items:nth-child(6) {
+    flex-basis: 16.66%;
+    padding: 24px 0 0 24px;
+  }
 }

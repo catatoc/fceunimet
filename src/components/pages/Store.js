@@ -46,7 +46,7 @@ export default function StorePage() {
         chatMessage="Hola! Un gusto saludarte. Estamos a la orden para ayudarte. Ponte en contacto con nosotros para indicarte cómo es la mejor manera de resolver tu inquietud."
         CSSProperties="z-index=100"
       />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

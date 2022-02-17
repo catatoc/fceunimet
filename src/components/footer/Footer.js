@@ -11,9 +11,16 @@ import FacebookLogo from "../svg/facebook.svg";
 function Footer() {
   return (
     <footer>
+      {/* Para incluir el hr necesitamo otro contenedor para el logo */}
+      <div id="footer-logo-small-screens-wrapper">
+        <Link to="/" className="footer-logo">
+          <img src="/images/logo.png" alt="FCE Unimet Logo" />
+        </Link>
+        <hr />
+      </div>
       <ul className="footer-links-container">
         {footRoutes.map((route, i) => (
-          <li className="footer-items">
+          <li className="footer-items" key={i}>
             <Link to={route.route} className="footer-links">
               {route.name}
             </Link>
