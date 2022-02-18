@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Services from "./components/pages/Services";
 import Products from "./components/pages/Products";
 import SignUp from "./components/pages/SignUp";
-
+import CargosPage from "./components/pages/Cargos";
 import SchoolsPage from "./components/pages/Schools"
 import VideoFCE from './components/VideoFCE';
 import { useTimer } from 'react-timer-hook';
@@ -45,6 +45,7 @@ function App() {
             <Route path="/services" component={Services} />
             <Route path="/schools" component={SchoolsPage} />
             <Route path="/products" component={Products} />
+            <Route path="/cargos" component={CargosPage} />
             <Route path="/sign-up" component={SignUp} />
             <Route path="/store" component={StorePage} />
             <Route path='/us' component={UsPage} />

@@ -2,6 +2,7 @@
     width: 100%;
     margin: auto;
     background:none;
+    margin-bottom: 35%;
     
 }
 .lbl-menu{
@@ -98,5 +99,12 @@
 .title_carreras{
     text-align: center;
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 4%;
+    font-size: 200%;
+}
+.pulsar{
+    width: 20%;
+    height: 20%;
+    margin-left: 40%;
+    
 }

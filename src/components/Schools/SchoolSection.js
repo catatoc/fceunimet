@@ -28,7 +28,8 @@ export default function SchoolSection() {
 
                     <input type="radio" name="radio" id="radio2" checked></input>
                     <div class="tab2">
-                        <p>Aca dice que toque la carrera</p>
+                        <h2 className="title_carreras">Toque la pestana de la facultad que desea ver</h2>
+                        <img src="/images/mano.png" alt="" className="pulsar" />
                     </div>
 
                     <input type="radio" name="radio" id="radio3"></input>
@@ -40,7 +41,7 @@ export default function SchoolSection() {
                     <input type="radio" name="radio" id="radio4"></input>
                     <div class="tab4">
                         <h2 className="title_carreras">Ciencias</h2>
-                        <p>ACA VAN COSAS DE CIENCIASsssssssssssssssss ssssssssssssssssssssssssssssssssssssss</p>
+                        <p>Ciencias</p>
                     </div>
 
                     <input type="radio" name="radio" id="radio5"></input>
