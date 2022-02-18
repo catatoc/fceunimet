@@ -12,12 +12,24 @@ export default function Card() {
       {questionList.map((question, i) => (
         <div className="questioncard" key={i}>
           <div className="questioncard-text">
-            <FaQuestionCircle size='1.5rem'/>
-            <p className="questioncard-name">{question.question}</p>
+            <div className="questioncard-qtitle">
+              <FaQuestionCircle size='1.5rem'/>
+              <p className="questioncard-name">{question.question}</p>
+            </div>
+            <div className="questioncard-etiquetas">
+              <p className="questioncard-etiqueta1">{question.etiqueta1}</p>
+              <p className="questioncard-etiqueta2">{question.etiqueta2}</p>
+              <p className="questioncard-etiqueta3">{question.etiqueta3}</p>
+            </div>
           </div>
           <hr></hr>
           <div className="questioncard-description">
             <p className="questioncard-text">{question.answer}</p>
+          </div>
+          {/* Ver si poner botones en los anchors */}
+          <div className="questioncard-description-links">
+            <a href={question.href} target="_blank" className="questioncard-text">{question.usefulLink}</a>
+            <a href={question.href2} target="_blank" className="questioncard-text">{question.usefulLink2}</a>
           </div>
         </div>
         ))}

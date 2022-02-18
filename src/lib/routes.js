@@ -9,7 +9,8 @@ export const routes = [
   },
   {
     name: "Agrupaciones",
-    route: "/",
+    route: { pathname: "https://www.unimet.edu.ve/agrupaciones-estudiantiles/" },
+    target: "_blank",
   },
   {
     name: "Universidad",

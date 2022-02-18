@@ -23,7 +23,7 @@ function Navbar() {
             {/* Los to se mantendran a "/" hasta que tengan su pagina correspondiente hecha */}
             {routes.map((route, i) => (
               <li className="nav-item" key={i}>
-                <Link to={route.route} className="nav-links" onClick={toggleHome}>
+                <Link to={route.route} className="nav-links" target={route.target}>
                   {route.name}
                 </Link>
               </li>
