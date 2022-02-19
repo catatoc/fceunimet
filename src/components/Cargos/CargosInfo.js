@@ -8,9 +8,9 @@ export default function CargosInfo() {
     return (
         <>
             <div className="container_info_cargos">
-                <h2 className="title_cargos">¡Informacion de interes!</h2>
-                <p class="text_cargos">La Universidad Metropolitana cuenta actualmente con 5 facultades. Cada una cuentas con escuelas de las carreras que puedes ver en la unimet.</p>
-                <p class="text_cargos">A continuacion aparece las carreras divididas por facutad, accede a cada una para ver informacion sobre esta y la representacion estudiantil de cada una.</p>
+                <h2 className="title_cargos">¡Conoce sobre tu carrera!</h2>
+                <p class="text_cargos">El Ingeniero de Producción se dedica a la organización, planificación, mejoramiento continuo y control de los procesos de producción de bienes y servicios. Aplica sus capacidades y conocimientos de gestión en la optimización de los recursos materiales, humanos y tecnológicos con que cuentan las empresas para lograr que el área de operaciones sea capaz de generar bienes y servicios de alta calidad, creando una posición competitiva en el mercado.</p>
+                <p class="text_cargos">La directora de escuela de Ingenieria de Produccion es Maria Eugenia Alvarez.</p>
             </div>   
         </>
 

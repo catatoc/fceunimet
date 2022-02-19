@@ -5,7 +5,7 @@ import SchoolCard from './SchoolCard';
 import SchoolCard_Faces from "./SchoolCard_Faces";
 import SchoolCard_JyP from "./SchoolCard_JyP";
 import SchoolCard_humanidades from "./SchoolCard_humanidades";
-
+import SchoolCard_Ciencias from "./SchoolCard_Ciencias";
 export default function SchoolSection() {
     return (
         
@@ -41,7 +41,7 @@ export default function SchoolSection() {
                     <input type="radio" name="radio" id="radio4"></input>
                     <div class="tab4">
                         <h2 className="title_carreras">Ciencias</h2>
-                        <p>Ciencias</p>
+                        <SchoolCard_Ciencias />
                     </div>
 
                     <input type="radio" name="radio" id="radio5"></input>
