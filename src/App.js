@@ -12,6 +12,7 @@ import StorePage from './components/pages/Store';
 import UsPage from './components/pages/Us';
 import UniPage from './components/pages/University';
 import FAQsPage from './components/pages/FAQs';
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/university' component={UniPage} />
           <Route path='/ayuda' component={FAQsPage} />
         </Switch>
+        <Footer />
       </Router>
       }
     </>
