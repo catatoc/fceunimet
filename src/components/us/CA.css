@@ -1,4 +1,4 @@
-.CAsection {
+.CA-section {
     background-color: var(--system-background-light-200);
     font-style: normal;
     font-weight: normal;
@@ -6,21 +6,21 @@
     color: var(--texto-dark);
 }
 
-.title {
+.CA-section .title {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     padding-top: 7.5rem;
     padding-bottom: 3.5rem;
     align-items: center;
 }
 
-.title h2 {
+.CA-section .title h2 {
     text-align: left;
     padding-left: 8.4rem;
     padding-right: 3.5rem;
 }
 
-.title button {
+.CA-section .title button {
     text-align: center;
     color: var(--texto-light);
     background-color: var(--secondary-color-400);
@@ -30,52 +30,55 @@
     border: 0;
 }
 
-.title button:hover {
+.CA-section .title button:hover {
     background-color: var(--secondary-color-300);
     cursor: pointer;
 }
 
-.title button:active {
+.CA-section .title button:active {
     background-color: var(--secondary-color-500);
 }
 
-.functions {
-    padding-left: 10.3rem;
-    padding-bottom: 7.3rem;
+.CA-section .functions {
+    padding: 2rem 10rem;
+    /*padding-bottom: 7.3rem;*/
     vertical-align: bottom;
 }
 
-.container {
+.CA-section .cards {
+    background-color: var(--system-background-light-200);
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 6rem;
 }
 
-.container > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 22.5rem;
-}
-
-.CAsection  img {
-    width: 22.5rem;
-    height: 26.25rem;
-}
 
 @media screen and (max-width: 960px) {
-    .title h2 {
-        font-size: 56px;
+    .CA-section .title {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
-    .container > h3 {
+    .CA-section .title h2 {
+        font-size: 40px;
+        padding: 0 0 2rem 0;
+        text-align: center;
+    }
+    .CA-section .cards > h3 {
         font-size: 36px;
     }
     .CAFunctions {
         font-size: 24px;
     }
-    .container > p {
+    .CA-section .cards > p {
         font-size: 18px;
+    }
+    .CA-section .functions {
+        padding: 2rem 4rem;
+        vertical-align: bottom;
     }
 
 }

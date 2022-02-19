@@ -1,19 +1,19 @@
 .questioncard {
   border-radius: 10px;
-  background: white;
+  background: var(--neutral-color-100);
   padding: 1rem;
   width: 70rem;
   height: auto;
   margin: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 2px 2px 2px rgba(0.1, 0.1, 0.1, 0.2);
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
   transition: transform .2s; /* Animation */
-  margin-top: 1rem;
+  margin: 4rem;
 }
 
 .questioncard:hover {
-  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.01); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .questioncard-image {
   border-radius: 10px;
@@ -98,7 +98,6 @@
 
 .questioncard-qtitle {
   display: flex;
-  font-size: ;
 }
 
 .questioncard-text .questioncard-name {
@@ -110,6 +109,12 @@
 .questioncard-text .questioncard-price {
   font-weight: 400;
   font-size: small;
+}
+
+.questioncard hr {
+  background-color: var(--secondary-color-200);
+  height: 1px;
+  border: 0;
 }
 
 @media screen and (max-width: 1140px) {

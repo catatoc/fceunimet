@@ -22,7 +22,7 @@ export default function Card() {
               <p className="questioncard-etiqueta3">{question.etiqueta3}</p>
             </div>
           </div>
-          <hr></hr>
+          <hr/>
           <div className="questioncard-description">
             <p className="questioncard-text">{question.answer}</p>
           </div>

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import Home from "./components/pages/Home";
@@ -38,6 +38,7 @@ function App() {
           <Route path='/us' component={UsPage} />
           <Route path='/university' component={UniPage} />
           <Route path='/ayuda' component={FAQsPage} />
+          <Route path="/schools/:school" component={Home} /> {/* aquí va Schools en vez de Home*/}
         </Switch>
         <Footer />
       </Router>

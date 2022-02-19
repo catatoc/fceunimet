@@ -8,7 +8,7 @@ export default function University() {
     return(
       <div className="">
         {/*<Fade cascade triggerOnce>*/}
-        <Header image="" title="UNIVERSIDAD" text="" />
+        <Header image="/images/unimet3.jpg" title="UNIVERSIDAD" text="" />
         <Text />
             {/* <Maps /> */}
         {/*</Fade>*/}

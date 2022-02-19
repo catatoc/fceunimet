@@ -11,7 +11,7 @@ export default function FAQ() {
     return(
       <div className="">
         <Fade cascade triggerOnce>
-            <Header image="" title="PREGUNTAS FRECUENTES" text="" />
+            <Header image="/images/bandera.jpg" title="PREGUNTAS FRECUENTES" text="" />
             {/* <Text text={'A continuación se presentan las preguntas más frecuentes en los estudiantes de todas las carreras.'} /> */}
             {/* <div>
                 <h1>Filtro</h1>
