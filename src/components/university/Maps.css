@@ -2,9 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 8rem;
+    background-color: var(--system-background-light-200);
 }
 
 .maps iframe {
-    width: 480px;
-    height: auto;
+    width: 800px;
+    height: 480px;
 }

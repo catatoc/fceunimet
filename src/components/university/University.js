@@ -7,11 +7,11 @@ import Maps from './Maps'
 export default function University() {
     return(
       <div className="">
-        {/*<Fade cascade triggerOnce>*/}
-        <Header image="/images/unimet3.jpg" title="UNIVERSIDAD" text="" />
-        <Text />
-            {/* <Maps /> */}
-        {/*</Fade>*/}
+        <Fade cascade triggerOnce>
+          <Header image="/images/unimet3.jpg" title="UNIVERSIDAD" text="" />
+          <Text text='texto sobre universidad' />
+          <Maps />
+        </Fade>
       </div>
     )
 }
