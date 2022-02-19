@@ -65,14 +65,9 @@
         padding: 0 0 2rem 0;
         text-align: center;
     }
-    .container > h3 {
-        font-size: 36px;
-    }
-    .CAFunctions {
-        font-size: 24px;
-    }
-    .container > p {
-        font-size: 18px;
+    .JD-section .functions {
+        padding: 2rem 4rem;
+        vertical-align: bottom;
     }
 
 }

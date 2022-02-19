@@ -4,11 +4,20 @@
     align-items: center;
     text-align: center;
     width: 22.5rem;
+    height: 36rem;
     margin: 2rem;
 }
 
 .ca-card img {
     object-fit: cover;
-    height: 26.25rem;
+    height: 80%;
+    width: 100%;
     margin: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+    .ca-card {
+        width: 16rem;
+        height: 24rem;
+    }
 }

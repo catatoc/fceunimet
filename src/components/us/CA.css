@@ -54,18 +54,6 @@
     padding-bottom: 6rem;
 }
 
-.CA-section .cards > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 22.5rem;
-}
-
-.CA-section img {
-    width: 22.5rem;
-    height: 26.25rem;
-}
 
 @media screen and (max-width: 960px) {
     .CA-section .title {
@@ -87,6 +75,10 @@
     }
     .CA-section .cards > p {
         font-size: 18px;
+    }
+    .CA-section .functions {
+        padding: 2rem 4rem;
+        vertical-align: bottom;
     }
 
 }
