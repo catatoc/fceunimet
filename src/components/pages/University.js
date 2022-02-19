@@ -1,9 +1,9 @@
 import React from 'react';
 import '../../App.css';
-import University from '../pages/University';
+import University from '../university/University';
 import FloatingWhatsApp from 'react-floating-whatsapp';
 import logo from './../../logo_blanco.png';
-import Footer from "../footer/Footer";
+//import Footer from "../footer/Footer";
 
 export default function UniPage() {
   return (
