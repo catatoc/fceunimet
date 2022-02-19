@@ -14,7 +14,7 @@ export const routes = [
   },
   {
     name: "Universidad",
-    route: "/",
+    route: "/university",
   },
   {
     name: "Calendario",
