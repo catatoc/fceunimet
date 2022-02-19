@@ -12,23 +12,23 @@ export default function SchoolSection() {
         <div className="container_school">
                 <div className="lbl-menu">
                     <label for="radio2"><img src="/images/logo.png" alt="FCE Unimet Logo" className="logo" /></label>
-                    <label for="radio1">Ingenieria</label>
+                    <label for="radio1">Ingeniería</label>
                     <label for="radio3">Faces</label>
                     <label for="radio4">Ciencias</label>
                     <label for="radio5">Humanidades</label>
-                    <label for="radio6">Juridicos y Politicos</label>
+                    <label for="radio6">Jurídicos y Políticos</label>
                 </div>
 
                 <div className="content">
                     <input type="radio" name="radio" id="radio1" checked></input>
                     <div class="tab1">
-                        <h2 className="title_carreras">Ingenieria</h2>
+                        <h2 className="title_carreras">Ingeniería</h2>
                         <SchoolCard /> 
                     </div>
 
                     <input type="radio" name="radio" id="radio2" checked></input>
                     <div class="tab2">
-                        <h2 className="title_carreras">Toque la pestana de la facultad que desea ver</h2>
+                        <h2 className="title_carreras">Toque la pestaña de la facultad que desea ver</h2>
                         <img src="/images/mano.png" alt="" className="pulsar" />
                     </div>
 
@@ -51,7 +51,7 @@ export default function SchoolSection() {
                     </div>
                     <input type="radio" name="radio" id="radio6"></input>
                     <div class="tab6">
-                        <h2 className="title_carreras">Juridicos y Politicos</h2>
+                        <h2 className="title_carreras">Jurídicos y Políticos</h2>
                         <SchoolCard_JyP />
                     </div>
                 </div>

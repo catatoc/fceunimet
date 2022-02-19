@@ -19,7 +19,7 @@ export default function Representantes() {
                 </div>
                 <div className="consejeros_cards">
                     <img src="/images/Alejandro Hulcan.jpg" alt="" className="cargo_img" />
-                    <p className="name_cargo">Alejandro Hulcan</p>
+                    <p className="name_cargo">Alejandro Hulcán</p>
                     <p className="role_cargo">Consejero de escuela</p>
                 </div>
             </div>
@@ -27,7 +27,7 @@ export default function Representantes() {
             <div className="junta_container">
                 <div className="consejeros_cards">
                     <img src="/images/Genesis.jpg" alt="" className="cargo_img" />
-                    <p className="name_cargo">Genesis Recine</p>
+                    <p className="name_cargo">Génesis Recine</p>
                     <p className="role_cargo">Presidente</p>
                 </div>
                 <div className="consejeros_cards">
