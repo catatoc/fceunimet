@@ -1,0 +1,10 @@
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps iframe {
+    width: 480px;
+    height: auto;
+}
