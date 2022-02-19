@@ -42,6 +42,7 @@ function App() {
           <Route path='/ayuda' component={FAQsPage} />
           {/* <Route path="/schools/:school" component={Home} /> aquí va Schools en vez de Home */}
           <Route path="/schools" component={SchoolsPage} />
+          <Route path="/Cargos" component={CargosPage} />
         </Switch>
         <Footer />
       </Router>

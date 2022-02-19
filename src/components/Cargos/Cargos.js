@@ -9,8 +9,8 @@ export default function Cargos({ products = [] }) {
     return(
       <div className="">
         <Fade cascade triggerOnce>
-            <Header image="/images/gente.jpg" title="Ingenieria de Produccion" text="" />  
-            <CargosInfo />
+            <Header image="/images/gente.jpg" title="Ingeniería de Producción" text="" />  
+            {/* <CargosInfo /> */}
             <Representantes />
             <Carousel products={products} />
         </Fade>

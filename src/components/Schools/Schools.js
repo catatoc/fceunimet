@@ -9,7 +9,7 @@ export default function Schools() {
         <div className="">
         <Fade cascade triggerOnce>
             <Header image="/images/saman.jpg" title="ESCUELAS" text="" />
-            <SchoolInfo />
+            {/* <SchoolInfo /> */}
             <SchoolSection />
         </Fade>
       </div>
