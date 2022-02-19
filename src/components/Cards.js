@@ -1,8 +1,15 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import {animateScroll as scroll} from 'react-scroll'
 
 function Cards() {
+
+  // Funcion para subir al home
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }
+
   return (
     <div className='cards'>
       <h1>¡Estamos trabajando para ti!</h1>
@@ -10,10 +17,10 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/presidentes.jpg'
+              src='images/presidentes-min.jpg'
               text='Descubre lo que significa ser parte de este equipo'
               label='Nosotros'
-              path='/services'
+              path='/us'
             />
             <CardItem
               src='images/unimet.jpg'
@@ -25,21 +32,23 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/bandera.jpg'
-              text='Próximas actividades'
-              label='Calendario'
-              path='/services'
+              text='¡No te quedes con dudas!'
+              label='Preguntas Frecuentes'
+              path='/ayuda'
             />
             <CardItem
               src='images/saman.jpg'
-              text='Mejora tu vida universitaria formando parte de agrupaciones'
-              label='Agrupaciones'
+              text='Mejora tu vida universitaria involucrándote con tu Escuela'
+              label='Escuelas'
+              onClick={toggleHome}
               path='/products'
             />
             <CardItem
               src='images/vintage.jpg'
               text='Información relevante sobre nuetra Universidad'
               label='Universidad'
-              path='/sign-up'
+              onClick={toggleHome}
+              path='/escuelas'
             />
           </ul>
         </div>

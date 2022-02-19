@@ -4,20 +4,26 @@ import "./Navbar.css";
 import { routes } from "../../lib/routes";
 import { Button } from "../Button";
 import { MenuDropdown, MasDropdown } from "./NavDropdown";
+import {animateScroll as scroll} from 'react-scroll'
 
 function Navbar() {
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+}
+
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo">
+          <Link to="/" className="navbar-logo" onClick={toggleHome}>
             <img src="/images/logo.png" alt="FCE Unimet Logo" />
           </Link>
           <ul className="nav-menu">
             {/* Los to se mantendran a "/" hasta que tengan su pagina correspondiente hecha */}
             {routes.map((route, i) => (
               <li className="nav-item" key={i}>
-                <Link to={route.route} className="nav-links">
+                <Link to={route.route} className="nav-links" target={route.target} onClick={toggleHome}>
                   {route.name}
                 </Link>
               </li>

@@ -1,26 +1,21 @@
 import React from 'react';
 import './CA.css';
+import CACard from './cards/CACard';
+import { ca } from '../../lib/FCE2122';
 
 //Dos Consejeros Académicos, se debe pasar imagen, nombre y descripción de cada uno
-export default function CA({ img1 = '', name1 = '', info1 = '' , img2 = '' , name2 = '' , info2 = ''}) {
+export default function CA() {
     return (
-        <section className='CAsection'>
+        <section className='CA-section'>
             <div className="title">
                 <h2>Consejeros Académicos</h2>
                 <button>Organigrama</button>
             </div>
-            <p className="functions">Función de los CA</p>
-            <div className="container">
-                <div>
-                    <h3>{name1}</h3>
-                    <img src={img1} alt={`Imagen de ${name1}`}/>
-                    <p>{info1}</p>
-                </div>
-                <div>
-                    <h3>{name2}</h3>
-                    <img src={img2} alt={`Imagen de ${name2}`}/>
-                    <p>{info2}</p>
-                </div>
+            <p className="functions">Los Consejeros Académicos somos tus representantes estudiantiles ante el Consejo Académico: una reunión a la que asisten las máximas autoridades de la Universidad, donde defendemos los derechos de los estudiantes y donde materializamos proyectos de interés para la comunidad unimetana. </p>
+            <div className="cards">
+                {ca.map((c, i) => (
+                    <CACard key={i} src={c.src} name={c.name} info={c.info} />
+                ))}
             </div>
         </section>
     )

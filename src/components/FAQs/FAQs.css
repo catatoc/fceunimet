@@ -1,0 +1,33 @@
+.faqcards {
+    padding: 4rem;
+    background: #fff;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .faqcards__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .faqcards__wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+  }
+  
+  .faqcards__items {
+    margin-bottom: 24px;
+  }
+  
+  .faqcards__item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+    border-radius: 10px;
+  }

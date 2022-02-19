@@ -1,7 +1,7 @@
 footer * {
   color: var(--texto-dark);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -11,7 +11,11 @@ footer {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  padding: 0 80px 0 80px;
+  padding: 36px 80px 0 80px;
+}
+
+#footer-logo-small-screens-wrapper {
+  display: none;
 }
 
 .footer-links-container {
@@ -20,6 +24,9 @@ footer {
   list-style: none;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid grey;
 }
 
 .footer-items:nth-child(1),
@@ -79,11 +86,39 @@ footer {
 }
 
 hr {
-  margin: 40px 0 40px 0;
+  margin-bottom: 40px;
 }
 
 .footer-copyright {
   margin: 40px 0 20px 0;
   color: var(--texto-dark);
   font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) {
+  #footer-logo-small-screens-wrapper {
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-links-container {
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    align-items: center;
+  }
+  .footer-links-container {
+    margin-bottom: 16px;
+  }
+  /* Escondemos el logo de la lista */
+  .footer-items:nth-child(7) {
+    display: none;
+  }
+
+  /* No necesitamos que el ultimo elemento visible tenga margen ya que la lista ya lo aplica */
+  .footer-items:not(:nth-child(6)) {
+    margin-bottom: 24px;
+  }
 }

@@ -1,17 +1,21 @@
 .joinUs {
     background-color: var(--system-background-light-200);
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    padding: 7.5rem 2rem;
 }
 
 .joinUs h3 {
     font-size: 2.25rem;
     font-weight: lighter;
     text-align: center;
-    padding: 7.5rem 0;
-    width: 58rem;
+}
+
+.joinUs .buttons {
+    display: flex;
+    flex-direction: row;
 }
 
 .joinUs button {
@@ -19,6 +23,7 @@
     height: 3.25rem;
     border-radius: 6px;
     border: 0;
+    margin: 0 1rem;
 }
 
 .joinUs button:first-of-type {
@@ -40,4 +45,27 @@
 .joinUs button:last-of-type:hover {
     background-color: var(--system-background-light-300);
     cursor: pointer;
+}
+
+@media screen and (max-width: 970px) {
+    .joinUs {
+        flex-direction: column;
+    }
+    .joinUs h3 {
+        font-size: x-large;
+        margin-bottom: 1rem;
+    }
+    .joinUs button {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .joinUs h3 {
+        font-size: larger;
+        margin-bottom: 1rem;
+    }
+    .joinUs .buttons {
+        flex-direction: column;
+    }
 }

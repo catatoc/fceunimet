@@ -5,8 +5,10 @@ export default function JoinUs() {
     return (
         <section className="joinUs">
             <h3>¿Te gustaría formar parte?</h3>
-            <button>Únete al equipo</button>
-            <button>Contact us</button>
+            <div className="buttons">
+                <button>Únete al equipo</button>
+                <button>Contáctanos</button>
+            </div>
         </section>
     )
 }

@@ -1,0 +1,35 @@
+.faq-cta-container {
+    background-color: var(--system-background-light-200);
+    height: 50vh;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq-cta-container > h2 {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    font-size: 24px;
+    font-weight: 400;
+}
+.faq-cta-button {
+    text-decoration: none;
+    background-color: var(--secondary-color-400);
+    border: none;
+    padding: 0.75rem 2.75rem;
+    color: var(--system-background-light-100);
+    border-radius: 5px;
+    width: fit-content;
+    font-size: medium;
+}
+.faq-cta-button:hover {
+    background-color: var(--secondary-color-500);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .faq-cta-container > h2 {
+        font-size: 18px;
+    }
+}
