@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./components/navbar/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import Home from "./components/pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -47,6 +47,7 @@ function App() {
             <Route path="/store" component={StorePage} />
             <Route path='/us' component={UsPage} />
             <Route path='/ayuda' component={FAQs} />
+            <Route path="/schools/:school" component={Home} /> {/* aquí va Schools en vez de Home*/}
           </Switch>
           <Footer />
         </Router>

@@ -1,0 +1,39 @@
+.position-card  {
+    width: 24rem;
+    height: 24rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .position-card .card-image {
+    border-radius: 4px;
+    height: 60%;
+    background-color: var(--system-background-light-200);
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .position-card .card-image > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .card-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+  }
+  .card-text .card-name {
+    font-weight: 700;
+  }
+  .position-card > p {
+    margin-top: 0.5rem;
+    font-weight: 400;
+    font-size: small;
+  }
+  

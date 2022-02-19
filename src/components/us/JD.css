@@ -1,4 +1,4 @@
-.JDsection {
+.JD-section {
     background-color: var(--system-background-light-100);
     font-style: normal;
     font-weight: normal;
@@ -6,21 +6,21 @@
     color: var(--texto-dark);
 }
 
-.title {
+.JD-section .title {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     padding-top: 7.5rem;
     padding-bottom: 3.5rem;
     align-items: center;
 }
 
-.title h2 {
+.JD-section .title h2 {
     text-align: left;
     padding-left: 8.4rem;
     padding-right: 10rem;
 }
 
-.title button {
+.JD-section .title button {
     text-align: center;
     color: var(--texto-light);
     background-color: var(--secondary-color-400);
@@ -30,47 +30,40 @@
     border: 0;
 }
 
-.title button:hover {
+.JD-section .title button:hover {
     background-color: var(--secondary-color-300);
     cursor: pointer;
 }
 
-.title button:active {
+.JD-section .title button:active {
     background-color: var(--secondary-color-500);
 }
 
-.functions {
-    padding-left: 10.3rem;
-    padding-bottom: 15.1rem;
+.JD-section .functions {
+    padding: 2rem 10rem;
+    /* padding-bottom: 15.1rem; */
     vertical-align: bottom;
 }
 
-.row {
+.JD-section .cards {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 4rem;
 }
 
-.row:last-child {
-    margin-bottom: 8rem;
-}
-
-.row > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 22.5rem;
-}
-
-.JDsection img {
-    width: 18.75rem;
-    height: 12.5rem;
-}
-
 @media screen and (max-width: 960px) {
-    .title h2 {
-        font-size: 56px;
+    .JD-section .title {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .JD-section .title h2 {
+        font-size: 40px;
+        padding: 0 0 2rem 0;
+        text-align: center;
     }
     .container > h3 {
         font-size: 36px;
