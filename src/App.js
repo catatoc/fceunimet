@@ -10,48 +10,39 @@ import VideoFCE from './components/VideoFCE';
 import { useTimer } from 'react-timer-hook';
 import StorePage from './components/pages/Store';
 import UsPage from './components/pages/Us';
-import FAQs from './components/pages/FAQs';
-import Footer from "./components/footer/Footer";
+import UniPage from './components/pages/University';
+import FAQsPage from './components/pages/FAQs';
+import Footer from './components/footer/Footer'
 
 function App() {
-  const [firstVideoEnded, setfirstVideoEnded] = useState(false); //variable que permite saber si el video inicial termino
 
-  const childToParent = (childdata) => {
-    //comunicacion entre este componente y el VideoFCE.js para saber si video termino
-    setfirstVideoEnded(childdata);
-  };
+  const [isToggled, setIsToggled] = useState(true); // Para mostrar el video inicial
 
-  // const [isToggled, setIsToggled] = useState(true); // Para mostrar el video inicial
-
-  // const time = new Date(); // Para asignar el timer
-  // time.setSeconds(time.getSeconds() + 5); // Timer 20 segundos
-
-  // const {} = useTimer({
-  //   expiryTimestamp: time,
-  //   autoStart: true,
-  //   onExpire: () => setIsToggled(!isToggled),
-  // }); //Para que al pasar el tiempo indicado se muestre la página
+  const time = new Date(); // Para asignar el timer
+  time.setSeconds(time.getSeconds() + 10); // Timer 20 segundos
+  
+  const {
+  } = useTimer({ expiryTimestamp: time, autoStart: true, onExpire: () => setIsToggled(!isToggled)}); //Para que al pasar el tiempo indicado se muestre la página
 
   return (
     <>
-      {!firstVideoEnded ? (
-        <VideoFCE childToParent={childToParent} />
-      ) : (
-        <Router>
-          <Navbar />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/services" component={Services} />
-            <Route path="/products" component={Products} />
-            <Route path="/sign-up" component={SignUp} />
-            <Route path="/store" component={StorePage} />
-            <Route path='/us' component={UsPage} />
-            <Route path='/ayuda' component={FAQs} />
-            <Route path="/schools/:school" component={Home} /> {/* aquí va Schools en vez de Home*/}
-          </Switch>
-          <Footer />
-        </Router>
-      )}
+      {isToggled ? <VideoFCE /> : 
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/services' component={Services} />
+          <Route path='/products' component={Products} />
+          <Route path='/sign-up' component={SignUp} />
+          <Route path='/store' component={StorePage} />
+          <Route path='/us' component={UsPage} />
+          <Route path='/university' component={UniPage} />
+          <Route path='/ayuda' component={FAQsPage} />
+          <Route path="/schools/:school" component={Home} /> {/* aquí va Schools en vez de Home*/}
+        </Switch>
+        <Footer />
+      </Router>
+      }
     </>
   );
 }

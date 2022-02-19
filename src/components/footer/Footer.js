@@ -7,7 +7,9 @@ import InstagramLogo from "../svg/instagram.svg";
 import YoutubeLogo from "../svg/youtube.svg";
 import TwitterLogo from "../svg/twitter.svg";
 import FacebookLogo from "../svg/facebook.svg";
+import WhatsappLogo from "../svg/whatsapp.svg";
 import {animateScroll as scroll} from 'react-scroll'
+
 
 function Footer() {
 
@@ -27,7 +29,7 @@ function Footer() {
       <ul className="footer-links-container">
         {footRoutes.map((route, i) => (
           <li className="footer-items" key={i}>
-            <Link to={route.route} className="footer-links">
+            <Link to={route.route} className="footer-links" target={route.target} onClick={route.scrollTop}>
               {route.name}
             </Link>
           </li>
@@ -40,8 +42,8 @@ function Footer() {
       </ul>
       <ul className="footer-social-container">
         <li>
-          <Link to="/" className="footer-social">
-            <img src={FacebookLogo} alt="Perfil de Facebook" />
+          <Link to={{ pathname: "https://wa.me/message/IXSR62NGBTYKL1" }} target="_blank" aria-label="WhatsApp" className="footer-social">
+            <img src={WhatsappLogo} alt="Perfil de WhatsApp" />
           </Link>
         </li>
         <li>
