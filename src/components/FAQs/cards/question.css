@@ -3,11 +3,16 @@
   background: white;
   padding: 1rem;
   width: 70rem;
-  height: 20rem;
+  height: auto;
   margin: 1rem 2rem;
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 2px 2px rgba(0.1, 0.1, 0.1, 0.2);
+  transition: transform .2s; /* Animation */
+}
+
+.questioncard:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .questioncard-image {
   border-radius: 10px;
@@ -27,6 +32,25 @@
   margin-bottom: 0.5rem;
   /* vertical-align: middle; */
 }
+.questioncard-button {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: left; */
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  /* vertical-align: middle; */
+  text-decoration: none;
+  background-color: var(--secondary-color-400);
+  border: none;
+  padding: 0.75rem 2.75rem;
+  color: var(--system-background-light-100);
+  border-radius: 5px;
+  width: fit-content;
+  font-size: medium;
+}
 .questioncard-description {
     word-wrap: break-word
 }
@@ -41,7 +65,7 @@
     font-size: small;
     background-color: var(--primary-color-300);
     border-radius: 1rem;
-    padding: 0.4rem;
+    padding: 0.5rem;
     margin-right: 0.4rem;
   }
   .questioncard-etiqueta2 {
@@ -49,7 +73,7 @@
     font-size: small;
     background-color: var(--secondary-color-300);
     border-radius: 1rem;
-    padding: 0.4rem;
+    padding: 0.5rem;
     margin-right: 0.4rem;
   }
   .questioncard-etiqueta3 {
@@ -57,7 +81,7 @@
     font-size: small;
     background-color: var(--neutral-color-300);
     border-radius: 1rem;
-    padding: 0.4rem;
+    padding: 0.5rem;
     margin-right: 0.4rem;
 }
 

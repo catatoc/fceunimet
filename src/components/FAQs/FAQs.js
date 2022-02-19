@@ -13,9 +13,9 @@ export default function FAQ() {
         <Fade cascade triggerOnce>
             <Header image="" title="PREGUNTAS FRECUENTES" text="" />
             {/* <Text text={'A continuación se presentan las preguntas más frecuentes en los estudiantes de todas las carreras.'} /> */}
-            <div>
+            {/* <div>
                 <h1>Filtro</h1>
-            </div>
+            </div> */}
             <div className='faqcards__container'>
                 <div className='faqcards__wrapper'>
                 <ul className='faqcards__items'>
