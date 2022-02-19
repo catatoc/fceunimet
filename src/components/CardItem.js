@@ -1,7 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import {animateScroll as scroll} from 'react-scroll'
 
 function CardItem(props) {
+
+  // Funcion para subir al home
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  }
+
   return (
     <>
       <li className='cards__item'>
@@ -11,6 +18,7 @@ function CardItem(props) {
               className='cards__item__img'
               alt='Travel Image'
               src={props.src}
+              onClick={toggleHome}
             />
           </figure>
           <div className='cards__item__info'>
