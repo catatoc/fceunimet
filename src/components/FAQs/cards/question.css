@@ -92,6 +92,7 @@
     align-items: center;
     vertical-align: middle;
     top: 50%;
+    padding-top: 1rem;
 }
 
 .questioncard-qtitle {
