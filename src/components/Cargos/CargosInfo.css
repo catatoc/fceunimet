@@ -1,0 +1,20 @@
+.container_info_cargos{
+    width: 100%;
+    background-color: white;
+}
+.text_cargos{
+    padding: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-align: center;
+}
+.title_cargos{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    font-size: 200%;
+    margin-top: 3%;
+}
+

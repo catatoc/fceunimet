@@ -6,6 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Services from "./components/pages/Services";
 import Products from "./components/pages/Products";
 import SignUp from "./components/pages/SignUp";
+import CargosPage from "./components/pages/Cargos";
+import SchoolsPage from "./components/pages/Schools"
 import VideoFCE from './components/VideoFCE';
 import { useTimer } from 'react-timer-hook';
 import StorePage from './components/pages/Store';
@@ -38,7 +40,8 @@ function App() {
           <Route path='/us' component={UsPage} />
           <Route path='/university' component={UniPage} />
           <Route path='/ayuda' component={FAQsPage} />
-          <Route path="/schools/:school" component={Home} /> {/* aquí va Schools en vez de Home*/}
+          {/* <Route path="/schools/:school" component={Home} /> aquí va Schools en vez de Home */}
+          <Route path="/schools" component={SchoolsPage} />
         </Switch>
         <Footer />
       </Router>
