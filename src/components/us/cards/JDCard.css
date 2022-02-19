@@ -8,7 +8,7 @@
   }
   .position-card .card-image {
     border-radius: 4px;
-    height: 60%;
+    height: 70%;
     background-color: var(--system-background-light-200);
     margin: 1rem 0;
     display: flex;
@@ -17,6 +17,7 @@
     align-items: start;
   }
   .position-card .card-image > img {
+    object-position: top;
     object-fit: cover;
     height: 100%;
     width: 100%;
