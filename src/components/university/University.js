@@ -9,7 +9,7 @@ export default function University() {
       <div className="">
         <Fade cascade triggerOnce>
           <Header image="/images/unimet3.jpg" title="UNIVERSIDAD" text="" />
-          <Text text='texto sobre universidad' />
+          {/* <Text text='texto sobre universidad' /> */}
           <Maps />
         </Fade>
       </div>
