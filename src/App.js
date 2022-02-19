@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import "./App.css";
 import Home from "./components/pages/Home";
@@ -11,6 +11,8 @@ import { useTimer } from 'react-timer-hook';
 import StorePage from './components/pages/Store';
 import UsPage from './components/pages/Us';
 import UniPage from './components/pages/University';
+import FAQsPage from './components/pages/FAQs';
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -35,7 +37,10 @@ function App() {
           <Route path='/store' component={StorePage} />
           <Route path='/us' component={UsPage} />
           <Route path='/university' component={UniPage} />
+          <Route path='/ayuda' component={FAQsPage} />
+          <Route path="/schools/:school" component={Home} /> {/* aquí va Schools en vez de Home*/}
         </Switch>
+        <Footer />
       </Router>
       }
     </>

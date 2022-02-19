@@ -16,7 +16,7 @@ function Home() {
         <FloatingWhatsApp
         allowClickAway={true}
         avatar={logo}
-        phoneNumber="+584141181358"
+        phoneNumber="+584241961948"
         accountName="FCE-UNIMET"
         statusMessage="Universidad Metropolitana de Caracas"
         chatMessage="Hola! Un gusto saludarte. Estamos a la orden para ayudarte🌳🍊"
