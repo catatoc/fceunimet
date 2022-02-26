@@ -10,7 +10,7 @@ export default function Us() {
     return(
       <div className="">
         <Fade cascade triggerOnce>
-            <Header image="/images/presidentes.jpg" title="NOSOTROS" text="" />
+            <Header image="/images/presidentes-min-min.jpg" title="NOSOTROS" text="" />
             <Text text={'¡Un equipo de 104 personas comprometidas con el bienestar unimetano!'} />
             <CA />
             <JD />
