@@ -42,12 +42,12 @@
   align-items: center;
   justify-content: center;
   vertical-align: center;
-  animation: opacityOn 8s normal forwards;
+  /* animation: opacityOn 8s normal forwards;
   animation-delay: 2s;
-  opacity: 0;
+  opacity: 0; */
 }
 
-@keyframes opacityOn {
+/* @keyframes opacityOn {
   0% {
       opacity: 1;
   }
@@ -63,7 +63,7 @@
   100% {
       opacity: 1;
   }
-}
+} */
 
 .btn-instagram.active {
   opacity: 1;

@@ -20,16 +20,16 @@ function Home() {
 		        <img src={WhatsAppIcon} alt='WhatsApp'></img>
 	        </a>
         </div>
-        <div className='btn-instagram'>
+        {/* <div className='btn-instagram'>
           <a className='anchor-whatsapp' href="https://api.whatsapp.com/send?phone=584241961948" target="_blank">
 		        <img src={InstagramIcon} alt='WhatsApp'></img>
 	        </a>
-        </div>
-        <div className='btn-youtube'>
+        </div> */}
+        {/* <div className='btn-youtube'>
           <a className='anchor-whatsapp' href="https://api.whatsapp.com/send?phone=584241961948" target="_blank">
 		        <img src={YoutubeIcon} alt='WhatsApp'></img>
 	        </a>
-        </div>
+        </div> */}
     </>
   );
 }
