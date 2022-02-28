@@ -24,8 +24,75 @@
   justify-content: center;
   vertical-align: center;
 }
+.btn-instagram {
+  /* display: block; */
+  width: 55px;
+  height: 55px;
+  color: #ffff;
+  background-color: #E1306C;
+  position: fixed;
+  right: 8px;
+  bottom: 70px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+  animation: opacityOn 8s normal forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+@keyframes opacityOn {
+  0% {
+      opacity: 1;
+  }
+  25% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 1;
+  }
+  75% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.btn-instagram.active {
+  opacity: 1;
+}
+.btn-youtube {
+  /* display: block; */
+  width: 55px;
+  height: 55px;
+  color: #ffff;
+  background-color: #FF0000;
+  position: fixed;
+  right: 8px;
+  bottom: 132px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+}
 
 .btn-whatsapp:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+.btn-instagram:hover {
   transform: scale(1.1);
   transition: 0.2s;
 }
