@@ -4,6 +4,39 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+
+.btn-whatsapp {
+  /* display: block; */
+  width: 55px;
+  height: 55px;
+  color: #ffff;
+  background-color: #25D366;
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: center;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.anchor-whatsapp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: center;
+}
+
 :root {
   /* Variables de Color  segun la paleta de colores del wireframe
   Primary */

@@ -22,7 +22,8 @@ function HeroSection() {
           className="btns"
           buttonStyle="btn--primary"
           buttonSize="btn--large"
-          onClick={console.log("hey")}
+          onClick="location.href='www.unimet.edu.ve'"
+          target='_blank'
         >
           ENTÉRATE <i className="far fa-play-circle" />
         </Button>

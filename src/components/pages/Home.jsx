@@ -6,24 +6,18 @@ import HeroSection from '../HeroSection';
 import FloatingWhatsApp from 'react-floating-whatsapp';
 import logo from './../../logo_blanco.png';
 import Footer from "../footer/Footer";
+import WhatsAppIcon from './../../components/svg/whatsapp-white.svg'
 
 function Home() {
   return (
     <>
-      {/* <Fade cascade triggerOnce> */}
         <HeroSection />
         <Cards />
-        <FloatingWhatsApp
-        allowClickAway={true}
-        avatar={logo}
-        phoneNumber="+584241961948"
-        accountName="FCE-UNIMET"
-        statusMessage="Universidad Metropolitana de Caracas"
-        chatMessage="Hola! Un gusto saludarte. Estamos a la orden para ayudarte🌳🍊"
-        CSSProperties="z-index=100"
-      />
-      {/* </Fade> */}
-      {/* <Footer /> */}
+        <div className='btn-whatsapp'>
+          <a className='anchor-whatsapp' href="https://api.whatsapp.com/send?phone=584241961948" target="_blank">
+		        <img src={WhatsAppIcon} alt='WhatsApp'></img>
+	        </a>
+        </div>
     </>
   );
 }

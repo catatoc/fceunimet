@@ -61,6 +61,16 @@
   justify-content: space-evenly;
 }
 
+.questioncard-etiqueta1:empty {
+  display: none;
+}
+.questioncard-etiqueta2:empty {
+  display: none;
+}
+.questioncard-etiqueta3:empty {
+  display: none;
+}
+
 .questioncard-etiqueta1 {
     word-wrap: break-word;
     font-size: small;
@@ -130,6 +140,15 @@
 @media screen and (max-width: 900px) {
   .questioncard {
     width: 30rem;
+  }
+  .questioncard-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .questioncard-etiquetas {
+    width: 100%;
+    padding-top: 0.5rem;
+    justify-content: space-evenly;
   }
 }
 @media screen and (max-width: 768px) {
