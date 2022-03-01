@@ -6,6 +6,7 @@ import FloatingWhatsApp from "react-floating-whatsapp";
 import logo from "./../../logo_blanco.png";
 import WhatsAppIcon from './../../components/svg/whatsapp-white.svg'
 import '../../App.css';
+import { ReactEmbeddedGoogleCalendar } from 'react-embedded-google-calendar';
 
 export default function StorePage() {
   // query de productos aquí
@@ -47,9 +48,11 @@ export default function StorePage() {
       escuela: "Ing. Sistemas",
     },
   ];
+
   return (
     <>
       <Calendar products={products} />
+      <ReactEmbeddedGoogleCalendar publicUrl ="https://calendar.google.com/calendar/embed?src=ceum%40unimet.edu.ve&ctz=America%2FCaracas" height= '400px'/>
       <div className='btn-whatsapp'>
         <a className='anchor-whatsapp' href="https://api.whatsapp.com/send?phone=584241961948" target="_blank">
           <img src={WhatsAppIcon} alt='WhatsApp'></img>
