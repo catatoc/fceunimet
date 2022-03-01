@@ -1,0 +1,54 @@
+.carousel-holder-calendar {
+  background-color: var(--system-background-light-200);
+  padding: 4rem 8rem; /* arreglar para responsive*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+  height: 100vh;
+}
+
+.slick-track {
+  margin: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--primary-color-300);
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .carousel-holder-calendar {
+    padding: 4rem;
+  }
+}
+
+
+
+
+.products-holder-calendar {
+  width: 80%;
+  display: flex;
+  /* flex-wrap: wrap; temporal */
+  flex-direction: row;
+  overflow-x: hidden; /* temporal */
+}
+
+.carousel-button-calendar {
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    background-color: var(--primary-color-300);
+}
+
+.carousel-button-arrow-calendar {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.carousel-button-arrow-calendar:hover {
+    color: var(--primary-color-400);
+    cursor: pointer;
+}

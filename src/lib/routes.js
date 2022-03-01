@@ -18,7 +18,7 @@ export const routes = [
   },
   {
     name: "Calendario",
-    route: "/",
+    route: "/calendar",
   },
   {
     name: "Tienda",

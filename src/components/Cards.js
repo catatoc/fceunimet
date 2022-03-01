@@ -23,21 +23,28 @@ function Cards() {
               onClick={toggleHome}
               path='/us'
             />
+                <CardItem
+                  src='images/calendario.jpg'
+                  text='¡Entérate de nuestros eventos!'
+                  label='Calendario'
+                  onClick={toggleHome}
+                  path='/calendar'
+                />
+              <CardItem
+                src='images/bandera.jpg'
+                text='¡No te quedes con dudas!'
+                label='Preguntas Frecuentes'
+                onClick={toggleHome}
+                path='/ayuda'
+              />
+          </ul>
+          <ul className='cards__items'>
             <CardItem
               src='images/unimet.jpg'
               text='Encuentra los productos que hemos desarrollado'
               label='Tienda'
               onClick={toggleHome}
               path='/store'
-            />
-          </ul>
-          <ul className='cards__items'>
-            <CardItem
-              src='images/bandera.jpg'
-              text='¡No te quedes con dudas!'
-              label='Preguntas Frecuentes'
-              onClick={toggleHome}
-              path='/ayuda'
             />
             <CardItem
               src='images/saman.jpg'
