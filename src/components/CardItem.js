@@ -16,13 +16,13 @@ function CardItem(props) {
           <figure className='cards__item__pic-wrap' data-category={props.label}>
             <img
               className='cards__item__img'
-              alt='Travel Image'
+              alt='Travel'
               src={props.src}
               onClick={toggleHome}
             />
           </figure>
           <div className='cards__item__info'>
-            <h5 className='cards__item__text'>{props.text}</h5>
+            <h5 className='cards__item__text' onClick={toggleHome}>{props.text}</h5>
           </div>
         </Link>
       </li>

@@ -1,7 +1,7 @@
 export const questionList = [
     {
       question: "¿Proyecto Industrial o Trabajo de Grado?",
-      answer: "Depende de cada persona. Lo primero que te recomendamos es saber la diferencia. A continuación te dejamos una infografía y un video de YouTube explicando ambas.\n\n ¡Acércate a tu Director de Escuela y habla sobre esto!",
+      answer: 'Depende de cada persona. Lo primero que te recomendamos es saber la diferencia. A continuación te dejamos una infografía y un video de YouTube explicando ambas.\n\n ¡Acércate a tu Director de Escuela y habla sobre esto!',
       usefulLink: "Video YouTube",
       href: "https://www.youtube.com/watch?v=Im6wywuG4GE&list=PLNEcizy7QtI-_1GUg2hy2uc0phuf1F5QU&index=2",
       usefulLink2: "Infografía",
@@ -19,9 +19,11 @@ export const questionList = [
       etiqueta3: "Cobranzas",
     },
     {
-      question: "Question 3",
-      answer: "Answer 3",
-      usefulLink: "Link",
+      question: "¿Cómo puedo mejorar el uso de las normas APA?",
+      answer: "Haciendo uso del Manual de Normas APA elaborado por el Centro de Estudiantes de Estudios Liberales.",
+      usefulLink: "Manual Normas APA CEEL",
+      href: "https://drive.google.com/file/d/1-AxIT5j9pk85p2UlrAnDCIqLRu3gMXV5/view?usp=sharing",
+      etiqueta1: "Tesistas",
     },
   ];
 

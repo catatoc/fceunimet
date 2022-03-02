@@ -12,7 +12,7 @@ export default function JD() {
                 <h2>Junta Directiva</h2>
                 <button>Organigrama</button>
             </div>
-            <p className="functions">Función de la JD</p>
+            <p className="functions">Desde la Junta Directiva nos encargamos de alinear a un equipo de 55 personas y de representar a los estudiantes ante las autoridades universitarias. Todo con un propósito común: mejorar la vida universitaria. </p>
             <div className="cards">
                 {jd.map((m, i) => (
                     <JDCard key={i} position={m.position} src={m.src} alt={m.alt} name={m.name} info={m.info} />

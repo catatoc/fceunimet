@@ -12,14 +12,14 @@ function VideoFCE({ childToParent }) {
 
   const videoRef = useRef();
   const setPlayBack = () => {
-    videoRef.current.playbackRate = 2;
+    videoRef.current.playbackRate = 10;
   };
 
   return (
     <Fade cascade triggerOnce>
       <div className="hero-containerFCE">
         <video
-          src="/videos/FCEUNIMET.mp4"
+          src="/videos/FCEUNIMET-min.mp4"
           autoPlay
           muted
           ref={videoRef}

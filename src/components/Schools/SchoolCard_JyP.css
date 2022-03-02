@@ -1,0 +1,47 @@
+.img{
+    width: 70%;
+    height: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: block;
+    margin-bottom: 15%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+
+}
+.Lu-card-JyP{
+    display: inline-block;
+    width: 100%;
+    margin-left: 17%;
+    
+    
+}
+.Li-card-JyP{
+    list-style-type: none;
+    display: inline-block;
+    max-width: 30%;
+    margin-left: 1.5%;
+    margin-right: 1.5%;
+    
+   
+}
+.p-Card-School{
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffad4f;
+    max-width: 100%;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding: 2.5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    cursor: pointer;  
+}
+.p-Card-School:hover{
+    background-color: #fa8b0c;
+    transition: 500ms;
+}

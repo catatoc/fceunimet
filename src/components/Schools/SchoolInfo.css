@@ -1,0 +1,13 @@
+.container_info_school{
+    width: 100%;
+    background-color: white;
+}
+.text_school{
+    padding: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    text-align: center;
+}
+

@@ -1,12 +1,105 @@
 .maps {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8rem;
-    background-color: var(--system-background-light-200);
+    margin-bottom: 3rem;
+    background-color: var(--neutral-color-100);
 }
 
 .maps iframe {
-    width: 800px;
-    height: 480px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.Mtext {
+    display: block;
+    text-align: justify;
+    width: 100%;
+}
+
+.Mtext h3 {
+    font-size: x-large;
+    padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 1201px) {
+    .maps {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 5rem 3rem;
+    }
+    .Mcontainer {
+        width: 800px;
+        height: 32rem;
+    }
+    .Mtext {
+        width: 400px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .maps {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+    .Mcontainer {
+        width: 50%;
+        height: 32rem;
+    }
+    .Mtext {
+        height: auto;
+        padding: 0 8%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .maps {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+    }
+    .Mcontainer {
+        width: 30rem;
+        height: 25rem;
+    }
+    .Mtext {
+        height: auto;
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .maps {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+    }
+    .Mcontainer {
+        width: 25rem;
+        height: 21rem;
+    }
+    .Mtext {
+        height: auto;
+        padding: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .maps {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .Mcontainer {
+        width: 20rem;
+        height: 17rem;
+    }
+    .Mtext {
+        height: auto;
+        padding: 2rem 0;
+    }
 }

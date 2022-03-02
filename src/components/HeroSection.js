@@ -6,7 +6,7 @@ import "./HeroSection.css";
 function HeroSection() {
   return (
     <div className="hero-container">
-      <video src="/videos/drone.mp4" autoPlay loop muted />
+      <video src="/videos/drone-min.mp4" autoPlay loop muted />
       <img className="phone-bg" src="/images/unimet3.jpg"></img>
       <h1>FCE UNIMET</h1>
       <p>Estudiantes comprometidos por el bienestar unimetano</p>
@@ -22,7 +22,8 @@ function HeroSection() {
           className="btns"
           buttonStyle="btn--primary"
           buttonSize="btn--large"
-          onClick={console.log("hey")}
+          onClick="location.href='www.unimet.edu.ve'"
+          target='_blank'
         >
           ENTÉRATE <i className="far fa-play-circle" />
         </Button>
