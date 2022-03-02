@@ -1,7 +1,6 @@
 .dropbtn {
   background-color: var(--system-background-light-100);
   border: 0;
-  padding: 30px 12.5px;
 }
 
 .dropbtn:hover p {
