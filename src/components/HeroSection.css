@@ -26,6 +26,24 @@ video {
   object-fit: contain;
 }
 
+.loading-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.isLoading{
+  height: 100vh;
+  width: 100%;
+  object-fit: contain;
+  background-image: url("../../public/images/Loading/loading-fce.gif");
+  background-position: center center;   
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
+  z-index: -1;
+}
+
 .hero-container > h1 {
   color: #fff;
   font-size: 100px;
@@ -57,6 +75,17 @@ video {
     font-size: 70px;
     margin-top: 0px;
   }
+
+  .isLoading {
+    transform: scale(2);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    object-fit: fill;
+    display: block;
+
+  }
+  
   video {
     display: none;
     visibility: hidden;
@@ -75,6 +104,14 @@ video {
   .hero-container > h1 {
     font-size: 50px;
     margin-top: 0px;
+  }
+  
+  video {
+    display: none;
+    visibility: hidden;
+  }
+  .phone-bg {
+    display: block;
   }
 
   .hero-container > p {
