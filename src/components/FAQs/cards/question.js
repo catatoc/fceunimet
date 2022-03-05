@@ -20,6 +20,7 @@ export default function Card() {
               <p className="questioncard-etiqueta1">{question.etiqueta1}</p>
               <p className="questioncard-etiqueta2">{question.etiqueta2}</p>
               <p className="questioncard-etiqueta3">{question.etiqueta3}</p>
+              <p className="questioncard-etiqueta3">{question.etiqueta4}</p>
             </div>
           </div>
           <hr/>

@@ -1,0 +1,56 @@
+.card-calendar {
+  border-radius: 10px;
+  background: white;
+  padding: 1rem;
+  width: 20rem;
+  height: 40rem;
+  margin: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.1);
+  transform: scale(0.9);
+}
+
+.card-calendar:hover {
+  transform: scale(1);
+  right: 50rem;
+  transition: 0.3s;
+}
+
+.card-image-calendar {
+  border-radius: 10px;
+  height: 100%;
+  background-color: var(--system-background-light-200);
+  margin-bottom: 1rem;
+  object-fit: cover;
+  /* transform: scale(0.6); */
+}
+.card-text-calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  height: 10%;
+  font-size: 1rem;
+}
+.card-date-calendar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  font-size: 1rem;
+  padding: 0.25rem;
+  margin-top: -0.75rem;
+}
+.card-text-calendar .card-name-calendar {
+  font-weight: 500;
+}
+.card-text-calendar .card-price-calendar {
+  font-weight: 300;
+  font-size: 2rem;
+}
+.card-text-calendar .card-date-calendar {
+  font-weight: 300;
+  font-size: 2rem;
+}

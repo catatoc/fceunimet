@@ -25,6 +25,15 @@ export const questionList = [
       href: "https://drive.google.com/file/d/1-AxIT5j9pk85p2UlrAnDCIqLRu3gMXV5/view?usp=sharing",
       etiqueta1: "Tesistas",
     },
+    {
+      question: "¿Cómo retirar asignaturas?",
+      answer: "Antes de retirar, recomendamos revisar la infografía realizada por Francis Márquez, Consejera del Centro de Estudiantes dde Estudios Liberales para saber si debo retirar o no. Luego, la UNIMET hizo una infografía que indica paso a paso cómo retirar una asignatura en la plataforma Sirius.",
+      usefulLink: "¿Retirar o no?",
+      href: "https://drive.google.com/file/d/1T2yP_s2HdbKqr1IWp6V4bhSi2kOIbpvw/view?usp=sharing",
+      usefulLink2: "¿Cómo retirar?",
+      href2: "https://drive.google.com/file/d/107MFh8qia4yLUzyzVsIFGn5CSf1kUV8R/view?usp=sharing",
+      etiqueta4: "Retiro",
+    },
   ];
 
   

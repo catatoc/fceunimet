@@ -9,6 +9,7 @@ import Footer from "../footer/Footer";
 import WhatsAppIcon from './../../components/svg/whatsapp-white.svg'
 import InstagramIcon from './../../components/svg/instagram-blanco.svg'
 import YoutubeIcon from './../../components/svg/youtube-blanco.svg'
+import "./../HeroSection.css";
 
 function Home() {
   return (

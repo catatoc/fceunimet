@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import "../App.css";
 import { Button } from "./Button";
 import "./VideoFCE.css";
+import "./HeroSection.css";
 import { Fade } from "react-awesome-reveal";
 
 // Video que saldrá al iniciar la página y cuando esté cargando.
@@ -12,12 +13,13 @@ function VideoFCE({ childToParent }) {
 
   const videoRef = useRef();
   const setPlayBack = () => {
-    videoRef.current.playbackRate = 10;
+    videoRef.current.playbackRate = 7;
   };
 
   return (
     <Fade cascade triggerOnce>
       <div className="hero-containerFCE">
+      <div className="isLoading"></div>  
         <video
           src="/videos/FCEUNIMET-min.mp4"
           autoPlay

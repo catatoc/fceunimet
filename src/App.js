@@ -14,6 +14,7 @@ import StorePage from "./components/pages/Store";
 import UsPage from "./components/pages/Us";
 import UniPage from "./components/pages/University";
 import FAQsPage from "./components/pages/FAQs";
+import CalendarPage from "./components/pages/Calendar";
 import Footer from "./components/footer/Footer";
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
             {/* <Route path="/schools/:school" component={Home} /> aquí va Schools en vez de Home */}
             <Route path="/schools" component={SchoolsPage} />
             <Route path="/Cargos" component={CargosPage} />
+            <Route path="/calendar" component={CalendarPage} />
           </Switch>
           <Footer />
         </Router>

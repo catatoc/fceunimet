@@ -7,6 +7,15 @@ video {
   position: fixed;
 }
 
+.phone-bgFCE {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  display: none;
+}
+
 .hero-containerFCE {
   height: 100vh;
   width: 100%;
@@ -16,4 +25,35 @@ video {
   align-items: center;
   /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
   object-fit: contain;
+}
+
+@media screen and (max-width: 760px) {
+  .hero-container > h1 {
+    font-size: 70px;
+    margin-top: 0px;
+  }
+
+  .isLoading {
+    transform: scale(1.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    object-fit: fill;
+
+  }
+  
+  videoFCE {
+    visibility: hidden;
+  }
+  .phone-bgFCE {
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+    background-image: url("../../public/images/FCEUNIMET-video/FCEUNIMET-horizontal.gif");
+    background-position: center center;   
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+
 }
