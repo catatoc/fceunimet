@@ -23,8 +23,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  justify-content: center;
   width: 100%;
+  padding: 0.5rem 2rem;
 }
 
 .navbar-logo {
@@ -32,7 +32,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 2rem;
 }
 
 .navbar-logo img {
@@ -50,11 +49,10 @@
   list-style: none;
   text-align: center;
   width: 82vw;
-  margin-right: 50px;
 }
 
 .nav-item {
-  padding: 22px 12.5px;
+  padding: 0 12.5px;
 }
 
 /* el padding del dropdown lo lleva le boton */
