@@ -3,13 +3,12 @@ import './question.css';
 import { FaQuestionCircle } from 'react-icons/fa';
 // import questionList from "../questionList";
 // import individualCard from "./card"
-import { questionList } from "../../../lib/questionList";
 
-export default function Card() {
+export default function Questions({ questions = [] }) {
   return(
     <>
       <div>
-      {questionList.map((question, i) => (
+      {questions.map((question, i) => (
         <div className="questioncard" key={i}>
           <div className="questioncard-text">
             <div className="questioncard-qtitle">
