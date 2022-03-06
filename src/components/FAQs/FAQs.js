@@ -44,8 +44,14 @@ export default function FAQ() {
   React.useEffect(() => {
     if (sortedQuestions && sortedQuestions?.length > 0) {
       const _tags = Array.from(
-        new Set(sortedQuestions?.map((q) => (q?.etiqueta1 && q?.etiqueta2 && q?.etiqueta3) ?? null))
+        new Set(sortedQuestions?.map((q) => q?.etiqueta1 ?? null))
       )?.filter((x) => !!x);
+      _tags.push(...Array.from(
+        new Set(sortedQuestions?.map((q) => q?.etiqueta2 ?? null))
+      )?.filter((x) => !!x));
+      _tags.push(...Array.from(
+        new Set(sortedQuestions?.map((q) => q?.etiqueta3 ?? null))
+      )?.filter((x) => !!x));
       setTags(_tags);
       }
   }, [sortedQuestions]);
@@ -58,7 +64,7 @@ export default function FAQ() {
             ?.toLowerCase()
             .includes(search.toLowerCase());
           const tagSearch =
-            tag === 'none' ? true : (question?.etiqueta1 || question?.etiqueta2 || question?.etiqueta3) === String(tag);
+            tag === 'none' ? true : question?.etiqueta1 === String(tag) || question?.etiqueta2 === String(tag) || question?.etiqueta3 === String(tag);
           return textSearch && tagSearch;
         })
       );

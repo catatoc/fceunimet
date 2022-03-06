@@ -19,7 +19,7 @@ export default function Filters({
                 setTag(e.target.value);
               }}
             >
-              <option value="none">Tema</option>
+              <option value="none">Selecciona un tema...</option>
               {tags.map((tag) => (
                 <option key={tag} value={tag}>
                   {tag}
