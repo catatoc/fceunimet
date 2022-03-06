@@ -1,4 +1,4 @@
-export const routes = [
+export const navRoutes = [
   {
     name: "Nosotros",
     route: "/us",
@@ -9,7 +9,9 @@ export const routes = [
   },
   {
     name: "Agrupaciones",
-    route: { pathname: "https://www.unimet.edu.ve/agrupaciones-estudiantiles/" },
+    route: {
+      pathname: "https://www.unimet.edu.ve/agrupaciones-estudiantiles/",
+    },
     target: "_blank",
   },
   {

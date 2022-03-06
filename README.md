@@ -36,5 +36,7 @@ Repositorio de la página web para la FCE UNIMET. El objetivo de este proyecto, 
 - [React Timer Hook](https://www.npmjs.com/package/react-timer-hook)
 - [Framer Motion](https://www.npmjs.com/package/framer-motion)
 - [React Scroll](https://www.npmjs.com/package/react-scroll)
+- [React Embedded Google Calendar]()
+  https://www.npmjs.com/package/react-embedded-google-calendar
 
 # Referencias
